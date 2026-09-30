@@ -3,7 +3,7 @@
   "lingua": "it",
   "aggiornato_il": "2026-09-30",
   "criteri": {
-    "casa_editrice": "Editore del gioco originale, quando noto; non necessariamente editore della copia italiana.",
+    "casa_editrice": "Editore del gioco originale quando noto; per Codex Naturalis è indicato Cranio Creations, editore della copia italiana confermato dall'utente.",
     "giocatori": "Intervallo stampato per il gioco base, senza contare variazioni introdotte dalle espansioni; null significa non verificato.",
     "contenuti_posseduti": "Espansioni, scenari e mazzi dichiarati dall'utente; la quantità è 1 salvo indicazione diversa.",
     "link_sito": "Preferibilmente pagina dell'editore; in mancanza, pagina informativa verificata. Null significa titolo non identificato.",
@@ -460,17 +460,22 @@
     },
     {
       "id": "codex",
-      "nome": null,
+      "nome": "Codex Naturalis",
       "titolo_nella_lista": "Codex",
-      "casa_editrice": null,
-      "tipologia": null,
-      "giocatori": null,
-      "autori": null,
-      "link_sito": null,
+      "casa_editrice": "Cranio Creations",
+      "tipologia": "carte; piazzamento; corsa ai punti",
+      "giocatori": {
+        "min": 2,
+        "max": 4
+      },
+      "autori": [
+        "Thomas Dupont"
+      ],
+      "link_sito": "https://studiobombyx.com/jeu/codex-naturalis/",
       "edizione": null,
       "contenuti_posseduti": [],
-      "stato_identificazione": "da_identificare",
-      "note": "Titolo ambiguo: potrebbe indicare Codex Naturalis o Codex: Card-Time Strategy. Serve la copertina o il nome completo."
+      "stato_identificazione": "verificato",
+      "note": "Edizione italiana Cranio Creations; editore originale Bombyx. Il link è alla pagina dell'editore originale."
     },
     {
       "id": "dixit",
@@ -532,17 +537,22 @@
     },
     {
       "id": "sea-stars",
-      "nome": null,
+      "nome": "A Sky of Stars",
       "titolo_nella_lista": "A Sea of stars",
-      "casa_editrice": null,
-      "tipologia": null,
-      "giocatori": null,
-      "autori": null,
-      "link_sito": null,
+      "casa_editrice": "GateOnGames",
+      "tipologia": "party game; roll-and-write; disegno",
+      "giocatori": {
+        "min": 3,
+        "max": 6
+      },
+      "autori": [
+        "Guido Albini"
+      ],
+      "link_sito": "https://www.gateongames.com/a-sky-of-stars/",
       "edizione": null,
       "contenuti_posseduti": [],
-      "stato_identificazione": "da_identificare",
-      "note": "Non ho trovato una corrispondenza affidabile con un gioco da tavolo. Serve la copertina o il nome esatto."
+      "stato_identificazione": "verificato",
+      "note": "Titolo identificato grazie all'indicazione dell'editore: il nome pubblicato è A Sky of Stars."
     },
     {
       "id": "root",
@@ -1142,4 +1152,3 @@
     }
   ]
 }
-
