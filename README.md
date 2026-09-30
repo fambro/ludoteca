@@ -28,6 +28,8 @@ Modifica `data/ludoteca.json`. Ogni oggetto in `giochi` ha un `id` univoco. I ca
 
 La ricerca ignora maiuscole e accenti e combina tutti i termini digitati. I filtri per categoria e numero di giocatori si applicano insieme alla ricerca. Se selezioni 4 giocatori, compaiono i giochi il cui intervallo include 4; i giochi con numero sconosciuto restano fuori dal risultato filtrato.
 
+Cliccando una card si apre un pannello laterale con i dettagli del gioco e le voci di `contenuti_posseduti` (espansioni, scenari e mazzi). Le card indicano quante voci aggiuntive sono registrate. Il pannello si chiude con il pulsante, con `Esc` o cliccando sullo sfondo; su telefono occupa l'intera larghezza dello schermo.
+
 ## Copertine
 
 Le copertine sono file WebP locali in `assets/covers`, quindi il sito non richiede richieste a siti terzi durante la navigazione. Gli URL originali sono registrati in `data/cover-sources.json`.

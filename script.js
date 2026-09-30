@@ -8,9 +8,27 @@ const elements = {
   clear: document.querySelector('#clear-filters'),
   empty: document.querySelector('#empty-state'),
   error: document.querySelector('#error-state'),
+  drawer: document.querySelector('#game-drawer'),
+  drawerClose: document.querySelector('#drawer-close'),
+  drawerTitle: document.querySelector('#drawer-title'),
+  drawerDescription: document.querySelector('#drawer-description'),
+  drawerCategory: document.querySelector('#drawer-category'),
+  drawerImage: document.querySelector('#drawer-image'),
+  drawerImageFallback: document.querySelector('#drawer-image-fallback'),
+  drawerPlayers: document.querySelector('#drawer-players'),
+  drawerPublisher: document.querySelector('#drawer-publisher'),
+  drawerAuthors: document.querySelector('#drawer-authors'),
+  drawerContentsCount: document.querySelector('#drawer-contents-count'),
+  drawerContentsList: document.querySelector('#drawer-contents-list'),
+  drawerContentsEmpty: document.querySelector('#drawer-contents-empty'),
+  drawerSiteLink: document.querySelector('#drawer-site-link'),
 };
 
 let games = [];
+let drawerTrigger = null;
+let drawerClosing = false;
+let closeTimer = null;
+let openingFrame = null;
 const collator = new Intl.Collator('it', { sensitivity: 'base' });
 const normalize = (value) => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('it').trim();
 const categoriesOf = (game) => String(game.tipologia ?? '').split(';').map((part) => part.trim()).filter(Boolean);
@@ -30,10 +48,115 @@ function playerLabel(players) {
   return players.min === players.max ? `${players.min} giocatore${players.min === 1 ? '' : 'i'}` : `${players.min}–${players.max} giocatori`;
 }
 
+function contentCountLabel(count) {
+  return `${count} ${count === 1 ? 'contenuto' : 'contenuti'}`;
+}
+
+function openDrawer(game, trigger) {
+  if (elements.drawer.open) return;
+  drawerClosing = false;
+  drawerTrigger = trigger;
+  const contents = Array.isArray(game.contenuti_posseduti) ? game.contenuti_posseduti : [];
+
+  elements.drawerTitle.textContent = game.nome;
+  elements.drawerDescription.textContent = game.descrizione || 'Un gioco della collezione da scoprire insieme.';
+  elements.drawerCategory.textContent = categoriesOf(game).join(' · ') || 'Gioco da tavolo';
+  elements.drawerPlayers.textContent = playerLabel(game.giocatori);
+  elements.drawerPublisher.textContent = game.casa_editrice || 'Da verificare';
+  elements.drawerAuthors.textContent = Array.isArray(game.autori) && game.autori.length ? game.autori.join(', ') : 'Da verificare';
+
+  elements.drawerImage.hidden = !game.immagine;
+  elements.drawerImageFallback.hidden = Boolean(game.immagine);
+  elements.drawerImageFallback.textContent = game.nome;
+  if (game.immagine) {
+    elements.drawerImage.alt = `Copertina di ${game.nome}`;
+    elements.drawerImage.src = game.immagine;
+  } else {
+    elements.drawerImage.removeAttribute('src');
+  }
+
+  elements.drawerContentsCount.textContent = contentCountLabel(contents.length);
+  elements.drawerContentsEmpty.hidden = contents.length > 0;
+  const items = contents.map((content) => {
+    const item = document.createElement('li');
+    item.className = 'drawer-content-item';
+    const information = document.createElement('div');
+    const category = document.createElement('span');
+    category.className = 'drawer-content-category';
+    category.textContent = content.categoria || 'contenuto aggiuntivo';
+    const name = document.createElement('strong');
+    name.textContent = content.nome;
+    information.append(category, name);
+    if (content.quantita > 1) {
+      const quantity = document.createElement('span');
+      quantity.className = 'drawer-content-quantity';
+      quantity.textContent = `×${content.quantita}`;
+      information.append(quantity);
+    }
+    if (content.note) {
+      const note = document.createElement('p');
+      note.textContent = content.note;
+      information.append(note);
+    }
+    item.append(information);
+    if (content.link_sito) {
+      const link = document.createElement('a');
+      link.href = content.link_sito;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.setAttribute('aria-label', `Apri la pagina di ${content.nome} in una nuova scheda`);
+      link.textContent = '↗';
+      item.append(link);
+    }
+    return item;
+  });
+  elements.drawerContentsList.replaceChildren(...items);
+  elements.drawerSiteLink.hidden = !game.link_sito;
+  if (game.link_sito) elements.drawerSiteLink.href = game.link_sito;
+
+  elements.drawer.showModal();
+  document.body.classList.add('drawer-open');
+  elements.drawer.scrollTop = 0;
+  elements.drawerClose.focus();
+  void elements.drawer.offsetWidth;
+  openingFrame = requestAnimationFrame(() => elements.drawer.classList.add('is-visible'));
+}
+
+function closeDrawer() {
+  if (!elements.drawer.open || drawerClosing) return;
+  drawerClosing = true;
+  cancelAnimationFrame(openingFrame);
+  elements.drawer.classList.remove('is-visible');
+  const finish = () => {
+    clearTimeout(closeTimer);
+    elements.drawer.removeEventListener('transitionend', onTransitionEnd);
+    if (!elements.drawer.open) return;
+    elements.drawer.close();
+    document.body.classList.remove('drawer-open');
+    if (drawerTrigger?.isConnected) drawerTrigger.focus();
+    drawerTrigger = null;
+    drawerClosing = false;
+  };
+  const onTransitionEnd = (event) => {
+    if (event.target === elements.drawer && event.propertyName === 'transform') finish();
+  };
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    finish();
+  } else {
+    elements.drawer.addEventListener('transitionend', onTransitionEnd);
+    closeTimer = setTimeout(finish, 350);
+  }
+}
+
 function createGameCard(game, index) {
   const [background, foreground, symbol] = coverColors(game);
   const article = document.createElement('article');
   article.className = 'game-card';
+  const openButton = document.createElement('button');
+  openButton.className = 'card-open';
+  openButton.type = 'button';
+  openButton.setAttribute('aria-label', `Apri dettagli e contenuti posseduti di ${game.nome}`);
+  openButton.addEventListener('click', () => openDrawer(game, openButton));
 
   const cover = document.createElement('div');
   cover.className = 'game-cover';
@@ -94,20 +217,12 @@ function createGameCard(game, index) {
     meta.append(chip);
   });
   body.append(category, heading, description, meta);
-  if (game.link_sito) {
-    const link = document.createElement('a');
-    link.className = 'card-link';
-    link.href = game.link_sito;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    link.textContent = 'Scopri il gioco';
-    const arrow = document.createElement('span');
-    arrow.setAttribute('aria-hidden', 'true');
-    arrow.textContent = '↗';
-    link.append(arrow);
-    body.append(link);
-  }
-  article.append(cover, body);
+  const detailHint = document.createElement('span');
+  detailHint.className = 'card-detail-hint';
+  const contentCount = Array.isArray(game.contenuti_posseduti) ? game.contenuti_posseduti.length : 0;
+  detailHint.textContent = contentCount ? `Dettagli · ${contentCountLabel(contentCount)} ↗` : 'Apri dettagli ↗';
+  body.append(detailHint);
+  article.append(openButton, cover, body);
   return article;
 }
 
@@ -167,4 +282,16 @@ elements.players.addEventListener('change', render);
 elements.clear.addEventListener('click', resetFilters);
 document.querySelector('#empty-reset').addEventListener('click', resetFilters);
 document.querySelector('#retry-button').addEventListener('click', loadGames);
+elements.drawerClose.addEventListener('click', closeDrawer);
+elements.drawer.addEventListener('cancel', (event) => {
+  event.preventDefault();
+  closeDrawer();
+});
+elements.drawer.addEventListener('click', (event) => {
+  if (event.target === elements.drawer && event.clientX < elements.drawer.getBoundingClientRect().left) closeDrawer();
+});
+elements.drawerImage.addEventListener('error', () => {
+  elements.drawerImage.hidden = true;
+  elements.drawerImageFallback.hidden = false;
+});
 loadGames();

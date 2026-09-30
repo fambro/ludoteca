@@ -59,5 +59,39 @@
 
     <footer class="site-footer shell"><span class="footer-brand">ludo<span>teca</span>.</span>
     <a href="#inizio">Torna su ↑</a></footer>
+
+    <dialog id="game-drawer" class="game-drawer" aria-labelledby="drawer-title" aria-describedby="drawer-description">
+      <div class="drawer-head">
+        <span class="drawer-eyebrow">NELLA LUDOTECA</span>
+        <button id="drawer-close" class="drawer-close" type="button" aria-label="Chiudi i dettagli del gioco">×</button>
+      </div>
+      <div class="drawer-content">
+        <div class="drawer-intro">
+          <div class="drawer-cover">
+            <img id="drawer-image" alt="">
+            <span id="drawer-image-fallback" class="drawer-image-fallback" hidden></span>
+          </div>
+          <div class="drawer-intro-copy">
+            <p id="drawer-category" class="card-topline"></p>
+            <h2 id="drawer-title"></h2>
+            <p id="drawer-description"></p>
+          </div>
+        </div>
+        <dl class="drawer-facts">
+          <div><dt>Giocatori</dt><dd id="drawer-players"></dd></div>
+          <div><dt>Casa editrice</dt><dd id="drawer-publisher"></dd></div>
+          <div><dt>Autori</dt><dd id="drawer-authors"></dd></div>
+        </dl>
+        <section class="drawer-contents" aria-labelledby="drawer-contents-title">
+          <div class="drawer-section-heading">
+            <h3 id="drawer-contents-title">Contenuti posseduti</h3>
+            <span id="drawer-contents-count"></span>
+          </div>
+          <ul id="drawer-contents-list"></ul>
+          <p id="drawer-contents-empty" hidden>Non ci sono espansioni o altri contenuti aggiuntivi registrati per questo gioco.</p>
+        </section>
+        <a id="drawer-site-link" class="drawer-site-link" target="_blank" rel="noopener noreferrer">Vai alla pagina del gioco <span aria-hidden="true">↗</span></a>
+      </div>
+    </dialog>
   </body>
 </html>
