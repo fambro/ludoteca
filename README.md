@@ -1,43 +1,28 @@
-# La Ludoteca
+# Ludoteca
 
-Catalogo statico di giochi da tavolo. Funziona con HTML, CSS e JavaScript, senza backend o dipendenze da installare per la navigazione.
+Board game catalog.
 
-## Avvio locale
+## Local setup
 
-Dalla cartella del progetto:
+From the project folder:
 
 ```sh
 python3 -m http.server 8000
+
 ```
 
-Apri `http://localhost:8000`. Serve un server statico perché il browser carica `data/ludoteca.json` con `fetch`; aprire `index.html` direttamente dal filesystem può bloccare la richiesta.
+## Updating the catalog
 
-## Aggiornare il catalogo
+Edit `data/ludoteca.json`. Each object in `giochi` has a unique `id`. The fields used by the page are:
 
-Modifica `data/ludoteca.json`. Ogni oggetto in `giochi` ha un `id` univoco. I campi usati dalla pagina sono:
-
-| Campo | Uso |
+| Field | Usage |
 | --- | --- |
-| `nome` | Titolo della scheda e ricerca |
-| `tipologia` | Categorie separate da `;`, usate per chip, filtro e ricerca |
-| `casa_editrice`, `autori` | Ricerca testuale |
-| `giocatori` | Oggetto `{ "min": 2, "max": 5 }`; `null` se sconosciuto |
-| `descrizione` | Breve testo della scheda |
-| `immagine` | Percorso locale della copertina, ad esempio `assets/covers/azul.webp`; `null` mostra una copertina illustrata |
-| `link_sito` | Link esterno della scheda |
+| `nome` | Card title and search |
+| `tipologia` | Categories separated by `;`, used for chips, filters, and search |
+| `casa_editrice`, `autori` | Text search |
+| `giocatori` | Object `{ "min": 2, "max": 5 }`; `null` if unknown |
+| `descrizione` | Short description on the card |
+| `immagine` | Local path to the cover image, e.g., `assets/covers/azul.webp`; `null` displays an illustrated cover |
+| `link_sito` | External link for the game |
 
-La ricerca ignora maiuscole e accenti e combina tutti i termini digitati. I filtri per categoria e numero di giocatori si applicano insieme alla ricerca. Se selezioni 4 giocatori, compaiono i giochi il cui intervallo include 4; i giochi con numero sconosciuto restano fuori dal risultato filtrato.
-
-Cliccando una card si apre un pannello laterale con i dettagli del gioco e le voci di `contenuti_posseduti` (espansioni, scenari e mazzi). Le card indicano quante voci aggiuntive sono registrate. Il pannello si chiude con il pulsante, con `Esc` o cliccando sullo sfondo; su telefono occupa l'intera larghezza dello schermo.
-
-## Copertine
-
-Le copertine sono file WebP locali in `assets/covers`, quindi il sito non richiede richieste a siti terzi durante la navigazione. Gli URL originali sono registrati in `data/cover-sources.json`.
-
-Per sostituire una copertina, puoi inserire un nuovo file in `assets/covers` e aggiornare il relativo percorso `immagine` nel JSON. Per riscaricare una copertina dall'URL registrato:
-
-```sh
-python3 scripts/download_covers.py id-del-gioco
-```
-
-Lo script di manutenzione richiede Pillow (`pip install Pillow`). Senza argomenti aggiorna tutte le copertine. Dopo ogni download conviene controllare che la foto corrisponda all'edizione posseduta: per alcuni giochi l'edizione esatta non è ancora specificata nel catalogo.
+Search ignores case and accents, combining all typed terms. Category and player count filters apply together with the search query. If you select 4 players, games whose range includes 4 will appear; games with an unknown player count are excluded from the filtered results.
