@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f2e9">
+    <meta name="description" content="Esplora la mia ludoteca: cerca giochi da tavolo per titolo, categoria, autore, editore e numero di giocatori.">
+    <title>La Ludoteca — Giochi da tavolo da scoprire</title>
+    <link rel="preload" href="data/ludoteca.json" as="fetch" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#catalogo">Vai al catalogo</a>
+
+    <header class="site-header shell">
+      <a class="brand" href="#inizio" aria-label="La Ludoteca, torna all'inizio">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span>la<span class="brand-accent">ludoteca</span><span class="brand-dot">.</span></span>
+      </a>
+      <a class="header-link" href="#catalogo">Esplora i giochi <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="inizio">
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> UNA COLLEZIONE DA GIOCARE</p>
+          <h1 id="hero-title">C'è sempre un gioco <em>giusto.</em></h1>
+          <p class="hero-description">Strategie da escogitare, storie da vivere, serate da ricordare. Sfoglia la mia collezione e trova il prossimo gioco da mettere sul tavolo.</p>
+          <a class="primary-button" href="#catalogo">Trova il tuo gioco <span aria-hidden="true">↗</span></a>
+          <div class="hero-stat" aria-live="polite"><span id="total-games">—</span><span>giochi pronti<br>per la prossima partita</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="hero-card hero-card-left"><span class="hero-card-symbol">✦</span><span>OGNI PARTITA<br>È UNA STORIA</span></div>
+          <div class="hero-card hero-card-main"><span class="hero-card-small">LA LUDOTECA · VOL. 01</span><span class="hero-card-asterisk">✳</span><strong>Si gioca<br>insieme.</strong><span class="hero-card-rule"></span><span class="hero-card-bottom">IL PROSSIMO GIOCO TI ASPETTA <span>● ● ●</span></span></div>
+          <div class="hero-card hero-card-right"><span class="hero-card-checkers">◈<br>◈</span><span>IL TUO<br>PROSSIMO<br>GIOCO</span></div>
+          <span class="hero-sparkle sparkle-one">✳</span><span class="hero-sparkle sparkle-two">✦</span>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="catalogo" aria-labelledby="catalog-title">
+        <div class="shell">
+          <div class="section-heading">
+            <div><p class="eyebrow"><span class="eyebrow-line"></span> LA COLLEZIONE</p><h2 id="catalog-title">Sfoglia la ludoteca<span class="heading-period">.</span></h2></div>
+            <p>Un mondo di possibilità,<br>una scatola alla volta.</p>
+          </div>
+
+          <div class="filter-panel" role="search" aria-label="Cerca nella ludoteca">
+            <div class="search-field">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+              <label class="sr-only" for="search-input">Cerca per titolo, categoria, editore o autore</label>
+              <input id="search-input" type="search" placeholder="Cerca un gioco, autore, editore..." autocomplete="off">
+            </div>
+            <div class="select-wrap">
+              <label class="sr-only" for="category-filter">Categoria</label>
+              <select id="category-filter"><option value="">Tutte le categorie</option></select>
+            </div>
+            <div class="select-wrap players-select">
+              <label class="sr-only" for="players-filter">Numero di giocatori</label>
+              <select id="players-filter"><option value="">N° giocatori</option></select>
+            </div>
+          </div>
+
+          <div class="results-bar">
+            <p id="results-count" aria-live="polite">Caricamento dei giochi…</p>
+            <button id="clear-filters" class="clear-button" type="button" hidden>Azzera filtri <span aria-hidden="true">×</span></button>
+          </div>
+
+          <div id="game-grid" class="game-grid" aria-live="off"></div>
+          <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">✳</span><h3>Nessun gioco trovato</h3><p>Prova un altro termine o modifica i filtri.</p><button id="empty-reset" type="button">Mostra tutti i giochi <span aria-hidden="true">↗</span></button></div>
+          <div id="error-state" class="empty-state" hidden><span aria-hidden="true">!</span><h3>Non riesco a caricare i giochi</h3><p>Ricarica la pagina. Se l’hai aperta come file locale, avvia un server statico.</p><button id="retry-button" type="button">Riprova <span aria-hidden="true">↗</span></button></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer shell"><span class="footer-brand">la<span>ludoteca</span>.</span><p>Ogni gioco aspetta la sua prossima storia.</p><a href="#inizio">Torna su ↑</a></footer>
+  </body>
+</html>

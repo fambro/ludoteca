@@ -7,7 +7,9 @@
     "giocatori": "Intervallo stampato per il gioco base, senza contare variazioni introdotte dalle espansioni; null significa non verificato.",
     "contenuti_posseduti": "Espansioni, scenari e mazzi dichiarati dall'utente; la quantità è 1 salvo indicazione diversa.",
     "link_sito": "Preferibilmente pagina dell'editore; in mancanza, pagina informativa verificata. Null significa titolo non identificato.",
-    "autori": "Autori del gioco base; null se non verificati."
+    "autori": "Autori del gioco base; null se non verificati.",
+    "descrizione": "Testo breve originale per la scheda del catalogo.",
+    "immagine": "Percorso relativo a una copertina locale; null usa una copertina illustrata di riserva."
   },
   "giochi": [
     {
@@ -27,7 +29,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Collega le città europee con le tue linee ferroviarie e completa i biglietti destinazione.",
+      "immagine": "assets/covers/ticket-europa.webp"
     },
     {
       "id": "ticket-europa-15",
@@ -46,7 +50,9 @@
       "edizione": "15° anniversario",
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": "Edizione autonoma da collezione; il link è alla pagina stampa dell'editore."
+      "note": "Edizione autonoma da collezione; il link è alla pagina stampa dell'editore.",
+      "descrizione": "L’avventura ferroviaria attraverso l’Europa in una speciale edizione del 15° anniversario.",
+      "immagine": "assets/covers/ticket-europa-15.webp"
     },
     {
       "id": "carcassonne",
@@ -65,7 +71,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Costruisci un paesaggio medievale tessera dopo tessera e scegli dove schierare i tuoi seguaci.",
+      "immagine": "assets/covers/carcassonne.webp"
     },
     {
       "id": "bang-bullet",
@@ -84,7 +92,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": "Confezione autonoma che include BANG! e varie espansioni."
+      "note": "Confezione autonoma che include BANG! e varie espansioni.",
+      "descrizione": "Duelli, ruoli segreti e colpi di scena nel Far West, in una confezione ricca di contenuti.",
+      "immagine": "assets/covers/bang-bullet.webp"
     },
     {
       "id": "azul",
@@ -103,7 +113,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Scegli piastrelle colorate e componi mosaici per ottenere la parete più armoniosa.",
+      "immagine": "assets/covers/azul.webp"
     },
     {
       "id": "architetti",
@@ -131,7 +143,9 @@
         }
       ],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Raduna lavoratori, raccogli risorse e lascia il tuo segno nel regno medievale.",
+      "immagine": "assets/covers/architetti.webp"
     },
     {
       "id": "cera-vecchia",
@@ -152,7 +166,9 @@
       "edizione": "vecchia edizione",
       "contenuti_posseduti": [],
       "stato_identificazione": "edizione_da_verificare",
-      "note": "Edizione italiana esatta non specificata; editore indicato è quello originale."
+      "note": "Edizione italiana esatta non specificata; editore indicato è quello originale.",
+      "descrizione": "Crea una fiaba insieme agli altri giocatori, intrecciando personaggi, luoghi ed eventi.",
+      "immagine": "assets/covers/cera-vecchia.webp"
     },
     {
       "id": "cera-nuova",
@@ -173,7 +189,9 @@
       "edizione": "nuova edizione italiana",
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": "Edizione italiana distribuita da Raven Distribution."
+      "note": "Edizione italiana distribuita da Raven Distribution.",
+      "descrizione": "Racconta una fiaba condivisa con le carte di questa nuova edizione narrativa.",
+      "immagine": "assets/covers/cera-nuova.webp"
     },
     {
       "id": "whitehall",
@@ -193,7 +211,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Un investigatore in fuga e una squadra sulle sue tracce: deduci i movimenti nascosti.",
+      "immagine": "assets/covers/whitehall.webp"
     },
     {
       "id": "white-castle",
@@ -221,7 +241,9 @@
         }
       ],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Pianifica ogni dado per ottenere influenza alla corte del Castello Bianco.",
+      "immagine": "assets/covers/white-castle.webp"
     },
     {
       "id": "scythe",
@@ -262,7 +284,9 @@
         }
       ],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Guida una fazione in un’Europa alternativa tra sviluppo, risorse e controllo del territorio.",
+      "immagine": "assets/covers/scythe.webp"
     },
     {
       "id": "expeditions",
@@ -289,7 +313,9 @@
         }
       ],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Parti per la Siberia, esplora nuove regioni e costruisci un motore di carte sempre più efficace.",
+      "immagine": "assets/covers/expeditions.webp"
     },
     {
       "id": "arkham-3",
@@ -332,7 +358,9 @@
         }
       ],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Indaga su inquietanti misteri e affronta insieme agli altri le minacce di Arkham.",
+      "immagine": "assets/covers/arkham-3.webp"
     },
     {
       "id": "elder-sign",
@@ -352,7 +380,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Lancia i dadi e supera prove nei corridoi del museo prima che l’orrore si risvegli.",
+      "immagine": "assets/covers/elder-sign.webp"
     },
     {
       "id": "set-watch",
@@ -371,7 +401,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": "Titolo originale Set a Watch: Forsaken Isles; espansione autonoma."
+      "note": "Titolo originale Set a Watch: Forsaken Isles; espansione autonoma.",
+      "descrizione": "Difendi il campo dalle creature dell’oscurità con una squadra di avventurieri.",
+      "immagine": "assets/covers/set-watch.webp"
     },
     {
       "id": "dead-winter",
@@ -399,7 +431,9 @@
         }
       ],
       "stato_identificazione": "edizione_da_verificare",
-      "note": "La lista non specifica l'edizione della scatola base."
+      "note": "La lista non specifica l'edizione della scatola base.",
+      "descrizione": "Sopravvivi a un inverno infestato dagli zombie, tra obiettivi comuni e interessi personali.",
+      "immagine": "assets/covers/dead-winter.webp"
     },
     {
       "id": "colt",
@@ -418,7 +452,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Programma le tue mosse e assalta un treno in corsa nel Far West.",
+      "immagine": "assets/covers/colt.webp"
     },
     {
       "id": "dune",
@@ -437,7 +473,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Conquista influenza su Arrakis combinando carte, agenti e alleanze politiche.",
+      "immagine": "assets/covers/dune.webp"
     },
     {
       "id": "betrayal",
@@ -456,7 +494,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "edizione_da_verificare",
-      "note": "Edizione non specificata; sito riferito al gioco originale."
+      "note": "Edizione non specificata; sito riferito al gioco originale.",
+      "descrizione": "Esplora una casa infestata che cambia a ogni partita, finché uno di voi potrebbe tradire il gruppo.",
+      "immagine": "assets/covers/betrayal.webp"
     },
     {
       "id": "codex",
@@ -475,7 +515,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": "Edizione italiana Cranio Creations; editore originale Bombyx. Il link è alla pagina dell'editore originale."
+      "note": "Edizione italiana Cranio Creations; editore originale Bombyx. Il link è alla pagina dell'editore originale.",
+      "descrizione": "Disponi carte sovrapposte e componi un manoscritto ricco di simboli e risorse.",
+      "immagine": "assets/covers/codex.webp"
     },
     {
       "id": "dixit",
@@ -494,7 +536,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Lascia parlare l’immaginazione: descrivi immagini evocative e indovina la carta giusta.",
+      "immagine": "assets/covers/dixit.webp"
     },
     {
       "id": "final-hour",
@@ -514,7 +558,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Una corsa contro il tempo nell’universo di Arkham Horror per fermare il rituale.",
+      "immagine": "assets/covers/final-hour.webp"
     },
     {
       "id": "chronicles",
@@ -533,7 +579,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Esamina scene del crimine, interroga sospetti e risolvi casi investigativi con l’aiuto dell’app.",
+      "immagine": "assets/covers/chronicles.webp"
     },
     {
       "id": "sea-stars",
@@ -552,7 +600,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": "Titolo identificato grazie all'indicazione dell'editore: il nome pubblicato è A Sky of Stars."
+      "note": "Titolo identificato grazie all'indicazione dell'editore: il nome pubblicato è A Sky of Stars.",
+      "descrizione": "Disegna costellazioni e insegui la combinazione migliore in un gioco creativo da condividere.",
+      "immagine": "assets/covers/sea-stars.webp"
     },
     {
       "id": "root",
@@ -571,7 +621,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Quattro fazioni asimmetriche si contendono il controllo di un bosco pieno di intrighi.",
+      "immagine": "assets/covers/root.webp"
     },
     {
       "id": "mansions",
@@ -590,7 +642,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Esplora dimore infestate, cerca indizi e affronta gli orrori guidati dall’app.",
+      "immagine": "assets/covers/mansions.webp"
     },
     {
       "id": "arkham-noir",
@@ -609,7 +663,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "edizione_da_verificare",
-      "note": "Numero del caso non specificato; la scheda è della serie."
+      "note": "Numero del caso non specificato; la scheda è della serie.",
+      "descrizione": "Un’indagine solitaria fatta di carte, indizi e scelte difficili nell’universo lovecraftiano.",
+      "immagine": "assets/covers/arkham-noir.webp"
     },
     {
       "id": "scholars",
@@ -629,7 +685,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Studia antichi manoscritti, traduci testi e pianifica l’uso di lavoratori e dadi.",
+      "immagine": "assets/covers/scholars.webp"
     },
     {
       "id": "fate-fellowship",
@@ -648,7 +706,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": "Il titolo compare due volte nella lista; registrato una volta sola."
+      "note": "Il titolo compare due volte nella lista; registrato una volta sola.",
+      "descrizione": "Accompagna la Compagnia nel suo viaggio attraverso la Terra di Mezzo, cooperando per evitare la rovina.",
+      "immagine": "assets/covers/fate-fellowship.webp"
     },
     {
       "id": "great-wall",
@@ -669,7 +729,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Coordina i tuoi lavoratori e difendi la Grande Muraglia dalle incursioni.",
+      "immagine": "assets/covers/great-wall.webp"
     },
     {
       "id": "bloodborne",
@@ -689,7 +751,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Affronta mostri e missioni in una campagna cooperativa ispirata al videogioco.",
+      "immagine": "assets/covers/bloodborne.webp"
     },
     {
       "id": "wistar",
@@ -709,7 +773,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Guida una colonia di ratti inventori tra esplorazione, risorse e nuove costruzioni.",
+      "immagine": "assets/covers/wistar.webp"
     },
     {
       "id": "time-stories",
@@ -750,7 +816,9 @@
         }
       ],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Viaggia attraverso scenari narrativi e risolvi misteri prima che il tempo finisca.",
+      "immagine": "assets/covers/time-stories.webp"
     },
     {
       "id": "arkham-lcg",
@@ -939,7 +1007,9 @@
         }
       ],
       "stato_identificazione": "edizione_da_verificare",
-      "note": "La specifica edizione della prima scatola base non è indicata; link al Capitolo 1."
+      "note": "La specifica edizione della prima scatola base non è indicata; link al Capitolo 1.",
+      "descrizione": "Costruisci il tuo mazzo investigatore e vivi campagne di orrore e mistero.",
+      "immagine": "assets/covers/arkham-lcg.webp"
     },
     {
       "id": "arkham-lcg-2",
@@ -997,7 +1067,9 @@
         }
       ],
       "stato_identificazione": "verificato",
-      "note": "Scatola base del Capitolo 2, compatibile con la linea precedente. I cinque mazzi investigatore elencati sono quelli del Capitolo 2 nel catalogo Asmodee Italia."
+      "note": "Scatola base del Capitolo 2, compatibile con la linea precedente. I cinque mazzi investigatore elencati sono quelli del Capitolo 2 nel catalogo Asmodee Italia.",
+      "descrizione": "Un nuovo capitolo del gioco di carte investigativo ambientato nell’universo di Arkham.",
+      "immagine": "assets/covers/arkham-lcg-2.webp"
     },
     {
       "id": "sherlock-thames",
@@ -1018,7 +1090,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "edizione_da_verificare",
-      "note": "Identificazione probabile della scatola senza sottotitolo; da confermare dalla copertina."
+      "note": "Identificazione probabile della scatola senza sottotitolo; da confermare dalla copertina.",
+      "descrizione": "Esamina giornali, mappe e testimonianze per risolvere i delitti del Tamigi.",
+      "immagine": "assets/covers/sherlock-thames.webp"
     },
     {
       "id": "sherlock-carlton",
@@ -1039,7 +1113,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Segui gli indizi tra Carlton House e Queen’s Park nei panni dei consulenti di Sherlock Holmes.",
+      "immagine": "assets/covers/sherlock-carlton.webp"
     },
     {
       "id": "sherlock-jack",
@@ -1059,7 +1135,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Indaga sui crimini di Jack lo Squartatore e sui casi del West End vittoriano.",
+      "immagine": "assets/covers/sherlock-jack.webp"
     },
     {
       "id": "mythos",
@@ -1078,7 +1156,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "edizione_da_verificare",
-      "note": "La lista non indica l'edizione; la scheda usa la nuova edizione italiana."
+      "note": "La lista non indica l'edizione; la scheda usa la nuova edizione italiana.",
+      "descrizione": "Collabora per sciogliere misteri e seguire indizi in un’indagine dalle tinte oscure.",
+      "immagine": "assets/covers/mythos.webp"
     },
     {
       "id": "one-small-step",
@@ -1097,7 +1177,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": null
+      "note": null,
+      "descrizione": "Rivivi la corsa allo spazio tra programmi, missioni e scelte strategiche.",
+      "immagine": "assets/covers/one-small-step.webp"
     },
     {
       "id": "arkham-rpg",
@@ -1114,7 +1196,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": "Fino a 5 investigatori più un Game Master; minimo di 1 investigatore dedotto dal formato GdR. Crediti creativi da controllare sulla scatola italiana."
+      "note": "Fino a 5 investigatori più un Game Master; minimo di 1 investigatore dedotto dal formato GdR. Crediti creativi da controllare sulla scatola italiana.",
+      "descrizione": "Un set introduttivo per raccontare e giocare un’avventura nel mondo di Arkham Horror.",
+      "immagine": "assets/covers/arkham-rpg.webp"
     },
     {
       "id": "dnd-essentials",
@@ -1131,7 +1215,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "da_confermare",
-      "note": "Identificazione probabile: 'Dragon of Icespire Peak'. I 2–6 includono un Dungeon Master e 1–5 avventurieri."
+      "note": "Identificazione probabile: 'Dragon of Icespire Peak'. I 2–6 includono un Dungeon Master e 1–5 avventurieri.",
+      "descrizione": "Un kit per iniziare a vivere avventure fantasy nel mondo di Dungeons & Dragons.",
+      "immagine": "assets/covers/dnd-essentials.webp"
     },
     {
       "id": "incipit",
@@ -1148,7 +1234,9 @@
       "edizione": null,
       "contenuti_posseduti": [],
       "stato_identificazione": "verificato",
-      "note": "Numero giocatori non indicato nelle fonti consultate."
+      "note": "Numero giocatori non indicato nelle fonti consultate.",
+      "descrizione": "Inventate storie insieme lasciando che dadi e spunti narrativi guidino l’immaginazione.",
+      "immagine": "assets/covers/incipit.webp"
     }
   ]
 }
