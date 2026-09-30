@@ -5,7 +5,6 @@ const elements = {
   category: document.querySelector('#category-filter'),
   players: document.querySelector('#players-filter'),
   count: document.querySelector('#results-count'),
-  total: document.querySelector('#total-games'),
   clear: document.querySelector('#clear-filters'),
   empty: document.querySelector('#empty-state'),
   error: document.querySelector('#error-state'),
@@ -149,7 +148,6 @@ async function loadGames() {
     const data = await response.json();
     if (!Array.isArray(data.giochi)) throw new Error('Formato dati non valido');
     games = data.giochi.map((game) => ({ ...game, _search: searchText(game) }));
-    elements.total.textContent = games.length;
     const categories = [...new Set(games.flatMap(categoriesOf))].sort(collator.compare);
     elements.category.replaceChildren(new Option('Tutte le categorie', ''), ...categories.map((value) => new Option(value[0].toUpperCase() + value.slice(1), value)));
     const maximum = Math.max(0, ...games.map((game) => game.giocatori?.max || 0));
