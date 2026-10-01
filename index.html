@@ -6,9 +6,9 @@
     <meta name="theme-color" content="#f6f2e9">
     <meta name="description" content="Esplora la mia ludoteca: cerca giochi da tavolo per titolo, categoria, autore, editore e numero di giocatori.">
     <title>Ludoteca di Flavio</title>
-    <link rel="preload" href="data/ludoteca.json?v=e461d1f6970551a543b49f605cfada10605cb0e9ce626a972e42a91bd81ed4b5" as="fetch" crossorigin>
-    <link rel="stylesheet" href="styles.css?v=c8ec50f369092f37d04438cbde78a5de6e79108a95f173e9222d3ab461e210a5">
-    <script src="script.js?v=de600f5149de31b751507029ff8923a7158695091e9e5c66d3907146d2b42017" defer></script>
+    <link rel="preload" href="data/ludoteca.json?v=c5f6c5a0b2f25679253de89d8a03e697f40061fd8d9ba922f70c3d5f2d915cf2" as="fetch" crossorigin>
+    <link rel="stylesheet" href="styles.css?v=259984a436e4b0eee507cfc03304c0bf8628019319c4f4685ec5775d7695e159">
+    <script src="script.js?v=ad5009569c0c97f5c583a64a25d9584f093babc16e11e7db657594a8a6d485e1" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#catalogo">Vai al catalogo</a>
@@ -103,7 +103,10 @@
           <ul id="drawer-contents-list"></ul>
           <p id="drawer-contents-empty" hidden>Non ci sono espansioni o altri contenuti aggiuntivi registrati per questo gioco.</p>
         </section>
-        <a id="drawer-site-link" class="drawer-site-link" target="_blank" rel="noopener noreferrer">Vai alla pagina del gioco <span aria-hidden="true">↗</span></a>
+        <div class="drawer-links">
+          <a id="drawer-manual-link" class="drawer-site-link" target="_blank" rel="noopener noreferrer" hidden>Leggi il manuale <span aria-hidden="true">↗</span></a>
+          <a id="drawer-site-link" class="drawer-site-link" target="_blank" rel="noopener noreferrer">Vai alla pagina del gioco <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
     </dialog>
   </body>

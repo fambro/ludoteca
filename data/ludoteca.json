@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3",
+  "schema_version": "1.4",
   "language": "it",
   "updated_at": "2026-10-01",
   "criteria": {
@@ -7,6 +7,7 @@
     "players": "Intervallo stampato per il gioco base, senza contare variazioni introdotte dalle espansioni; null significa non verificato.",
     "owned_content": "Espansioni, scenari e mazzi dichiarati dall'utente; la quantità è 1 salvo indicazione diversa.",
     "website_url": "Preferibilmente pagina dell'editore; in mancanza, pagina informativa verificata. Null significa titolo non identificato.",
+    "manual_url": "Link pubblico al regolamento del gioco base o della specifica edizione, preferibilmente in italiano, altrimenti in inglese; null se non disponibile o non verificato.",
     "authors": "Autori del gioco base; null se non verificati.",
     "version_of": "ID della versione principale dello stesso gioco; la versione collegata compare nel pannello laterale e non come card separata.",
     "description": "Testo breve originale per la scheda del catalogo.",
@@ -30,6 +31,7 @@
         "Guido Albini"
       ],
       "website_url": "https://www.gateongames.com/a-sky-of-stars/",
+      "manual_url": "https://www.gateongames.com/wp-content/uploads/2020/12/A-Sky-of-stars.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -53,6 +55,7 @@
         "S. J. Macdonald"
       ],
       "website_url": "https://www.garphill.com/products/architects-of-the-west-kingdom",
+      "manual_url": "https://www.garphill.com/cdn/shop/files/ArchitectsRulebook-WithAppendix.pdf?v=1384751603822513322",
       "edition": null,
       "owned_content": [
         {
@@ -85,6 +88,7 @@
         "Carlo A. Rossi"
       ],
       "website_url": "https://www.fantasyflightgames.com/en/products/arkham-horror-final-hour/",
+      "manual_url": "https://images-cdn.fantasyflightgames.com/filer_public/f9/19/f9198456-ba9b-47ff-baf4-00036f62d24e/afh01_rulebook_compressed.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -108,6 +112,7 @@
         "Matthew Newman"
       ],
       "website_url": "https://www.asmodee.it/product/arkham-horror-il-gioco-di-carte-lcg/",
+      "manual_url": "https://cdn.svc.asmodee.net/production-asmodeeit/uploads/2022/09/Arkham-Horror-LCG-Regolamento.pdf",
       "edition": null,
       "owned_content": [
         {
@@ -321,6 +326,7 @@
       },
       "authors": null,
       "website_url": "https://www.edge-studio.net/games/arkham-horror-starter-set/",
+      "manual_url": null,
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -346,6 +352,7 @@
         "Nicholas Kory"
       ],
       "website_url": "https://www.asmodee.it/product/arkham-horror-lcg-capitolo-2/",
+      "manual_url": "https://cdn.svc.asmodee.net/production-asmodeeit/uploads/2026/03/Arkham_Horror_LCG_Capitolo_2_ITA.pdf",
       "edition": null,
       "owned_content": [
         {
@@ -411,6 +418,7 @@
         "Kevin Wilson"
       ],
       "website_url": "https://www.fantasyflightgames.com/product/arkham-horror-third-edition/",
+      "manual_url": "https://cdn.svc.asmodee.net/production-fantasyflightgames/uploads/2026/09/ahb01_learn-to-play-compressed.pdf",
       "edition": null,
       "owned_content": [
         {
@@ -458,6 +466,7 @@
         "Yves Tourigny"
       ],
       "website_url": "https://www.yvestourigny.com/arkham-noir",
+      "manual_url": "https://ludonova.com/wp-content/uploads/2023/10/ANEnglishRules.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "edizione_da_verificare",
@@ -480,6 +489,7 @@
         "Michael Kiesling"
       ],
       "website_url": "https://www.asmodee.it/product/azul/",
+      "manual_url": "https://cdn.svc.asmodee.net/production-asmodeeit/uploads/2024/02/Azul_ITA.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -502,6 +512,7 @@
         "Emiliano Sciarra"
       ],
       "website_url": "https://www.dvgiochi.com/catalogo/bang-la-pallottola/?lang=eng",
+      "manual_url": "https://www.dvgiochi.com/giochi/BangTheBullet/BANG!_la_pallottola_regole.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -524,6 +535,7 @@
         "Bruce Glassco"
       ],
       "website_url": "https://boardgamegeek.com/boardgame/10547/betrayal-house-hill",
+      "manual_url": null,
       "edition": null,
       "owned_content": [],
       "identification_status": "edizione_da_verificare",
@@ -547,6 +559,7 @@
         "Michael Shinall"
       ],
       "website_url": "https://www.cmon.com/product-line/bloodborne-the-board-game/",
+      "manual_url": "https://cdn.svc.asmodee.net/production-asmodeeit/uploads/2022/09/Bloodborne_GdT_ITA.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -569,6 +582,7 @@
         "Klaus-Jürgen Wrede"
       ],
       "website_url": "https://www.hans-im-glueck.de/en/game/carcassonne/",
+      "manual_url": "https://www.hans-im-glueck.de/wp-content/uploads/2024/11/Carcassonne-v3_Rulesheet_EN_web.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -593,6 +607,7 @@
         "James Wallis"
       ],
       "website_url": "https://www.ravendistribution.it/cera-una-volta-nuova-edizione/",
+      "manual_url": "https://www.atlas-games.com/atlas-cms/resources/pdfs/ouat3rulesweb.pdf",
       "edition": "nuova edizione italiana",
       "owned_content": [],
       "identification_status": "verificato",
@@ -618,6 +633,7 @@
         "James Wallis"
       ],
       "website_url": "https://www.atlas-games.com/onceuponatime",
+      "manual_url": "https://www.atlas-games.com/pdf_storage/ouat_rulebook.pdf",
       "edition": "vecchia edizione",
       "owned_content": [],
       "identification_status": "edizione_da_verificare",
@@ -640,6 +656,7 @@
         "David Cicurel"
       ],
       "website_url": "https://luckyduckgames.com/global/game/1-1064-chronicles-of-crime",
+      "manual_url": "https://website.cdn77.luckyduckgames.com/downloads/May2020/c2aca2a7675dc5368f82d19eec65bab7.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -662,6 +679,7 @@
         "Thomas Dupont"
       ],
       "website_url": "https://studiobombyx.com/jeu/codex-naturalis/",
+      "manual_url": "https://cdn.shopify.com/s/files/1/1010/2246/6379/files/CODEX_ITA_Rules_compressed.pdf?v=1783525083",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -684,6 +702,7 @@
         "Christophe Raimbault"
       ],
       "website_url": "https://www.ludonaute.fr/produit/colt-express/",
+      "manual_url": "https://www.gateongames.com/wp-content/uploads/2021/06/colt-express-rulebook1.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -707,6 +726,7 @@
         "Jonathan Gilmour"
       ],
       "website_url": "https://www.fantasyflightgames.com/product/dead-of-winter/",
+      "manual_url": "https://cdn.svc.asmodee.net/production-asmodeeit/uploads/2023/09/Dead_of_Winter_ITA.pdf",
       "edition": null,
       "owned_content": [
         {
@@ -745,6 +765,7 @@
         "Jean-Louis Roubira"
       ],
       "website_url": "https://www.asmodee.it/product/dixit/",
+      "manual_url": "https://cdn.svc.asmodee.net/production-asmodeeit/uploads/2022/09/Dixit_regolamento_italiano.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -767,6 +788,7 @@
         "Paul Dennen"
       ],
       "website_url": "https://www.asmodee.it/product/dune-imperium/",
+      "manual_url": "https://cdn.svc.asmodee.net/production-asmodeeit/uploads/2022/09/Dune_Imperium_ITA.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -787,6 +809,7 @@
       },
       "authors": null,
       "website_url": "https://marketplace.dndbeyond.com/adventures/SRC-00041",
+      "manual_url": "https://media.wizards.com/2020/dnd/downloads/dnd_essentials_rulebook.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "da_confermare",
@@ -809,6 +832,7 @@
         "Jamey Stegmaier"
       ],
       "website_url": "https://store.stonemaiergames.com/products/expeditions",
+      "manual_url": "https://boardgamegeek.com/filepage/295691/rulebook-2025",
       "edition": null,
       "owned_content": [
         {
@@ -845,6 +869,7 @@
         "Kevin Wilson"
       ],
       "website_url": "https://www.fantasyflightgames.com/product/elder-sign/",
+      "manual_url": "https://www.goblins.net/files/downloads/Eldersign.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -867,6 +892,7 @@
         "Matt Leacock"
       ],
       "website_url": "https://www.asmodee.it/product/il-signore-degli-anelli-il-destino-della-compagnia/",
+      "manual_url": "https://cdn.svc.asmodee.net/production-asmodeeit/uploads/2025/08/Il_Destino_della_Compagnia_ITA.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -887,6 +913,7 @@
         "Mario Palladino"
       ],
       "website_url": "https://incipitgame.com/en/home/",
+      "manual_url": "https://incipitgame.com/come-si-gioca/",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -911,6 +938,7 @@
         "Łukasz Włodarczyk"
       ],
       "website_url": "https://boardgamegeek.com/boardgame/292375/the-great-wall",
+      "manual_url": "https://awakenrealms.com/images/download/Great_Wall/IT/IT_TGW_CB_Rulebook_2.0_280x280mm_bleed3mm%20%5B20%20pages%5D.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -933,6 +961,7 @@
         "Nikki Valens"
       ],
       "website_url": "https://www.fantasyflightgames.com/product/mansions-of-madness-second-edition/",
+      "manual_url": "https://cdn.svc.asmodee.net/production-asmodeeit/uploads/2022/09/Le_Case_Della_Follia_ITA.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -955,6 +984,7 @@
         "Hal Eccles"
       ],
       "website_url": "https://www.msedizioni.it/prodotto/mythos/",
+      "manual_url": "https://www.msedizioni.it/wp-content/uploads/2015/07/MSEDIZIONI-MYTHOS_REGOLAMENTO.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "edizione_da_verificare",
@@ -977,6 +1007,7 @@
         "James DuMond"
       ],
       "website_url": "https://www.academygames.com/products/one-small-step-retail-edition",
+      "manual_url": "https://cdn.1j1ju.com/medias/cf/ac/3f-one-small-step-rulebook.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -1000,6 +1031,7 @@
         "Danilo Sabia"
       ],
       "website_url": "https://boardgamegeek.com/boardgame/387780/rats-wistar",
+      "manual_url": "https://www.craniocreations.it/storage/media/product_downloads/96/1322/Ratti_ITA_Rules_base_compressed.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -1022,6 +1054,7 @@
         "Cole Wehrle"
       ],
       "website_url": "https://ledergames.com/products/root-a-game-of-woodland-might-and-right",
+      "manual_url": "https://www.msedizioni.it/wp-content/uploads/2019/03/MSEDIZIONI-ROOT_REGOLAMENTO.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -1044,6 +1077,7 @@
         "Jamey Stegmaier"
       ],
       "website_url": "https://store.stonemaiergames.com/products/scythe",
+      "manual_url": "https://www.meeple.it/upload/documents/prodotti/1781/scythe-regolamento-italiano.pdf",
       "edition": null,
       "owned_content": [
         {
@@ -1097,6 +1131,7 @@
         "Suzanne Goldberg"
       ],
       "website_url": "https://www.spacecowboys-games.com/game/carlton-house/",
+      "manual_url": "https://cdn.svc.asmodee.net/production-asmodeeit/uploads/2022/09/SHCI_C2_regolamento.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -1121,6 +1156,7 @@
         "Suzanne Goldberg"
       ],
       "website_url": "https://www.spacecowboys-games.com/game/the-thames-murders/",
+      "manual_url": "https://www.meeple.it/upload/documents/prodotti/632/sherlock-holmes-consulente-investigativo-i-delitti-del-tamigi-e-altri-casi-regolamento-italiano.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "edizione_da_verificare",
@@ -1144,6 +1180,7 @@
         "Suzanne Goldberg"
       ],
       "website_url": "https://www.spacecowboys-games.com/game/jack-the-ripper-west-end-adventures/",
+      "manual_url": "https://cdn.svc.asmodee.net/production-asmodeeit/uploads/2022/09/SHCI_C3_regolamento.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -1167,6 +1204,7 @@
         "S. J. Macdonald"
       ],
       "website_url": "https://www.garphill.com/products/scholars-of-the-south-tigris",
+      "manual_url": "https://fever-games.com/wp-content/uploads/2023/09/ScholarsRulebook_ITA_1.2_compressed.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -1190,6 +1228,7 @@
         "Sheila Santos"
       ],
       "website_url": "https://devir.cl/the-white-castle",
+      "manual_url": "https://boardgamegeek.com/boardgame/371942/the-white-castle/files",
       "edition": null,
       "owned_content": [
         {
@@ -1221,6 +1260,7 @@
         "Alan R. Moon"
       ],
       "website_url": "https://www.daysofwonder.com/game/ticket-to-ride-europe/",
+      "manual_url": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/2026/09/7262N_TICKET2RIDE_EUROPE_RULES_IT_20260512_compressed.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -1244,6 +1284,7 @@
         "Alan R. Moon"
       ],
       "website_url": "https://www.daysofwonder.com/press/",
+      "manual_url": "https://cdn.svc.asmodee.net/production-asmodeeca/uploads/2023/07/t2re15-rules-EN.pdf",
       "edition": "15° anniversario",
       "owned_content": [],
       "identification_status": "verificato",
@@ -1266,6 +1307,7 @@
         "Manuel Rozoy"
       ],
       "website_url": "https://www.spacecowboys-games.com/game/time-stories/",
+      "manual_url": "https://www.migliorigiochi.eu/wp-content/uploads/2019/07/TIME-Stories-regole.pdf",
       "edition": null,
       "owned_content": [
         {
@@ -1313,6 +1355,7 @@
         "Todd Walsh"
       ],
       "website_url": "https://rockmanorgames.com/portfolio/set-a-watch-forsaken-isles/",
+      "manual_url": "https://www.spiele-offensive.de/gfx/cf/set-a-watch-3/SaW_Forsaken_Isles_Rulebook.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",
@@ -1336,6 +1379,7 @@
         "Gianluca Santopietro"
       ],
       "website_url": "https://www.giochiuniti.it/whitehall-mystery-online/",
+      "manual_url": "https://www.giochiuniti.it/wp-content/themes/giochiuniti/files-supporto/Whitehall/Whitehall-Regolamento-web.pdf",
       "edition": null,
       "owned_content": [],
       "identification_status": "verificato",

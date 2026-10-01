@@ -24,6 +24,7 @@ Edit `data/ludoteca.json`. Each object in `games` has a unique `id`. The fields 
 | `description` | Short description on the card |
 | `image` | Local path to the cover image, e.g., `assets/covers/azul.webp`; `null` displays an illustrated cover |
 | `website_url` | External link for the game |
+| `manual_url` | Public rulebook link, preferably in Italian, otherwise in English; may lead to a rules page when no direct PDF is available; `null` when no matching manual was verified |
 | `owned_content` | Expansions, scenarios, and decks shown in the side panel |
 | `owned_content[].extends_player_count` | `true` when this content allows more players than the base game; otherwise `false` |
 | `owned_content[].players_with_expansion` | Player range with that expansion, present when `extends_player_count` is `true` |

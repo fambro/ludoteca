@@ -156,6 +156,8 @@ body.drawer-open .game-card{transition:none}
 .drawer-version-info{flex:1;min-width:0}
 .drawer-version-info>span{display:block;margin-bottom:5px;color:#ab694a;font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase}
 .drawer-version-info strong{font-size:14px;line-height:1.35;overflow-wrap:anywhere}
+.drawer-version-manual{display:inline-block;margin-top:8px;font-size:12px;font-weight:700;color:var(--dark)}
+.drawer-version-manual:hover{text-decoration:underline}
 .drawer-version-info p{margin:6px 0 0;color:#777b73;font-size:12px;line-height:1.45}
 .drawer-contents ul{list-style:none;margin:0;padding:0}
 .drawer-content-item{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid #eae8e1}
@@ -170,6 +172,9 @@ body.drawer-open .game-card{transition:none}
 .drawer-contents>p{margin:18px 0 0;padding:19px;background:#f5f2eb;color:#777b73;font-size:13px;line-height:1.5}
 .drawer-contents>p[hidden]{display:none}
 .drawer-site-link{display:inline-flex;justify-content:space-between;align-items:center;gap:30px;margin-top:32px;padding:15px 17px;background:var(--dark);color:white;font-size:13px;font-weight:800;border-radius:3px}
+.drawer-links{display:grid;gap:10px;margin-top:32px}
+.drawer-links .drawer-site-link{display:flex;margin-top:0}
+.drawer-links .drawer-site-link[hidden]{display:none}
 .drawer-site-link:hover{background:#285244}
 
 @media(max-width:1100px){.game-grid{grid-template-columns:repeat(3,minmax(0,1fr))}

@@ -1,4 +1,4 @@
-const dataUrl = new URL('data/ludoteca.json?v=e461d1f6970551a543b49f605cfada10605cb0e9ce626a972e42a91bd81ed4b5', document.baseURI);
+const dataUrl = new URL('data/ludoteca.json?v=c5f6c5a0b2f25679253de89d8a03e697f40061fd8d9ba922f70c3d5f2d915cf2', document.baseURI);
 const elements = {
   grid: document.querySelector('#game-grid'),
   search: document.querySelector('#search-input'),
@@ -28,6 +28,7 @@ const elements = {
   drawerContentsCount: document.querySelector('#drawer-contents-count'),
   drawerContentsList: document.querySelector('#drawer-contents-list'),
   drawerContentsEmpty: document.querySelector('#drawer-contents-empty'),
+  drawerManualLink: document.querySelector('#drawer-manual-link'),
   drawerSiteLink: document.querySelector('#drawer-site-link'),
 };
 
@@ -117,6 +118,16 @@ function openDrawer(game, trigger) {
     const name = document.createElement('strong');
     name.textContent = version.name;
     information.append(edition, name);
+    if (version.manual_url) {
+      const manual = document.createElement('a');
+      manual.className = 'drawer-version-manual';
+      manual.href = version.manual_url;
+      manual.target = '_blank';
+      manual.rel = 'noopener noreferrer';
+      manual.textContent = 'Manuale ↗';
+      manual.setAttribute('aria-label', `Apri il manuale di ${version.name}, ${version.edition || 'altra edizione'}, in una nuova scheda`);
+      information.append(manual);
+    }
     if (version.notes) {
       const note = document.createElement('p');
       note.textContent = version.notes;
@@ -177,6 +188,8 @@ function openDrawer(game, trigger) {
     return item;
   });
   elements.drawerContentsList.replaceChildren(...items);
+  elements.drawerManualLink.hidden = !game.manual_url;
+  if (game.manual_url) elements.drawerManualLink.href = game.manual_url;
   elements.drawerSiteLink.hidden = !game.website_url;
   if (game.website_url) elements.drawerSiteLink.href = game.website_url;
 
