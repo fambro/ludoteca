@@ -62,7 +62,7 @@ h1,h2,h3,p{margin-top:0}
 .sparkle-one{top:40px;right:95px}
 .sparkle-two{bottom:36px;left:102px;color:#c49a56}
 
-.catalog-section{background:#fffdf9;border-top:1px solid #ede6d9;padding:26px 0 116px;min-height:600px}
+.catalog-section{background:#fffdf9;border-top:1px solid #ede6d9;padding:26px 0 116px;min-height:100vh;min-height:100svh}
 .section-heading{display:flex;align-items:end;justify-content:space-between;gap:20px;}
 .section-heading .eyebrow{margin-bottom:16px}
 .section-heading h2{font-family:Georgia,serif;font-size:clamp(38px,4.4vw,64px);font-weight:400;letter-spacing:-2.8px;margin:0}
