@@ -34,3 +34,13 @@ Alternative editions stay in the JSON, but `version_of` links them to one visibl
 ## Sorting the catalog offline
 
 Run `python3 scripts/sort_ludoteca.py` to sort `games` by title. The script uses only Python's standard library, ignores case, accents, and punctuation, and keeps alternative editions beside their main entry. Run `python3 scripts/sort_ludoteca.py --check` to verify the order without changing the file.
+
+## Browser cache versions
+
+After editing `styles.css`, `script.js`, or `data/ludoteca.json`, run:
+
+```sh
+python3 scripts/update_asset_hashes.py
+```
+
+The offline script appends the full SHA-256 digest as `?v=` to the CSS, JavaScript, and JSON URLs. It updates the JSON URL in both `script.js` and the HTML preload, then hashes the updated JavaScript and writes its URL into `index.html`. Commit the changed files together. Use `python3 scripts/update_asset_hashes.py --check` to detect stale references without modifying files.

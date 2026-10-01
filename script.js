@@ -1,4 +1,4 @@
-const dataUrl = new URL('data/ludoteca.json', document.baseURI);
+const dataUrl = new URL('data/ludoteca.json?v=a83e5629b3340a4eb1ed998e4f36feb50d765012e4589d68965e64182bb1ac00', document.baseURI);
 const elements = {
   grid: document.querySelector('#game-grid'),
   search: document.querySelector('#search-input'),
