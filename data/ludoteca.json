@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.3",
   "language": "it",
-  "updated_at": "2026-09-30",
+  "updated_at": "2026-10-01",
   "criteria": {
     "publisher": "Editore del gioco originale quando noto; per Codex Naturalis è indicato Cranio Creations, editore della copia italiana confermato dall'utente.",
     "players": "Intervallo stampato per il gioco base, senza contare variazioni introdotte dalle espansioni; null significa non verificato.",
@@ -10,7 +10,10 @@
     "authors": "Autori del gioco base; null se non verificati.",
     "version_of": "ID della versione principale dello stesso gioco; la versione collegata compare nel pannello laterale e non come card separata.",
     "description": "Testo breve originale per la scheda del catalogo.",
-    "image": "Percorso relativo a una copertina locale; null usa una copertina illustrata di riserva."
+    "image": "Percorso relativo a una copertina locale; null usa una copertina illustrata di riserva.",
+    "average_play_time_minutes": "Durata indicativa in minuti per una partita o uno scenario del gioco base, senza preparazione. Se la fonte dà un intervallo, si usa il punto medio arrotondato ai 5 minuti; null significa che la durata della sessione non è definita o non è verificata. Non è una media misurata delle partite.",
+    "extends_player_count": "Booleano per ogni contenuto posseduto: true solo se introduce una modalità con più giocatori rispetto al gioco base. In quel caso players_with_expansion indica l’intervallo.",
+    "required_owned_products": "Nomi di altri giochi o contenuti che devono essere presenti nella ludoteca per usare l’intervallo players_with_expansion; se assente, non ci sono requisiti aggiuntivi."
   },
   "games": [
     {
@@ -32,7 +35,8 @@
       "identification_status": "verificato",
       "notes": "Titolo identificato grazie all'indicazione dell'editore: il nome pubblicato è A Sky of Stars.",
       "description": "Disegna costellazioni e insegui la combinazione migliore in un gioco creativo da condividere.",
-      "image": "assets/covers/sea-stars.webp"
+      "image": "assets/covers/sea-stars.webp",
+      "average_play_time_minutes": 20
     },
     {
       "id": "architetti",
@@ -56,13 +60,15 @@
           "category": "espansione",
           "quantity": 1,
           "website_url": "https://www.garphill.com/products/architects-age-of-artisans",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         }
       ],
       "identification_status": "verificato",
       "notes": null,
       "description": "Raduna lavoratori, raccogli risorse e lascia il tuo segno nel regno medievale.",
-      "image": "assets/covers/architetti.webp"
+      "image": "assets/covers/architetti.webp",
+      "average_play_time_minutes": 70
     },
     {
       "id": "final-hour",
@@ -84,7 +90,8 @@
       "identification_status": "verificato",
       "notes": null,
       "description": "Una corsa contro il tempo nell’universo di Arkham Horror per fermare il rituale.",
-      "image": "assets/covers/final-hour.webp"
+      "image": "assets/covers/final-hour.webp",
+      "average_play_time_minutes": 45
     },
     {
       "id": "arkham-lcg",
@@ -108,174 +115,199 @@
           "category": "campagna",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "L'Eredità di Dunwich – Espansione Investigatori",
           "category": "espansione investigatori",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "La Strada per Carcosa – Espansione Campagna",
           "category": "campagna",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "La Strada per Carcosa – Espansione Investigatori",
           "category": "espansione investigatori",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "L'Era Dimenticata – Espansione Campagna",
           "category": "campagna",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "L'Era Dimenticata – Espansione Investigatori",
           "category": "espansione investigatori",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Il Circolo Spezzato – Espansione Campagna",
           "category": "campagna",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Il Circolo Spezzato – Espansione Investigatori",
           "category": "espansione investigatori",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Le Chiavi Scarlatte – Espansione Campagna",
           "category": "campagna",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Le Chiavi Scarlatte – Espansione Investigatori",
           "category": "espansione investigatori",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "La Cospirazione di Innsmouth – Espansione Campagna",
           "category": "campagna",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "La Cospirazione di Innsmouth – Espansione Investigatori",
           "category": "espansione investigatori",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "La Festa di Hemlock Vale – Espansione Campagna",
           "category": "campagna",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "La Festa di Hemlock Vale – Espansione Investigatori",
           "category": "espansione investigatori",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Il Carnevale degli Orrori",
           "category": "scenario indipendente",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Il Gala di Mezzo Inverno",
           "category": "scenario indipendente",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/product/arkham-horror-lcg-il-gala-di-mezzo-inverno/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Assassinio all'Hotel Excelsior",
           "category": "scenario indipendente",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/product/arkham-horror-lcg-assassinio-allhotel-excelsior/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Fortuna e Follia",
           "category": "scenario indipendente",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "I Guardiani dell'Abisso",
           "category": "scenario indipendente",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Jacqueline Fine",
           "category": "mazzo introduttivo investigatore",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Ritorno a… L'Eredità di Dunwich",
           "category": "espansione Ritorno a",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Ritorno a… La Strada per Carcosa",
           "category": "espansione Ritorno a",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Ritorno a… La Notte dello Zelota",
           "category": "espansione Ritorno a",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Ritorno a… Il Circolo Spezzato",
           "category": "espansione Ritorno a",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         }
       ],
       "identification_status": "edizione_da_verificare",
       "notes": "La specifica edizione della prima scatola base non è indicata; link al Capitolo 1.",
       "description": "Costruisci il tuo mazzo investigatore e vivi campagne di orrore e mistero.",
-      "image": "assets/covers/arkham-lcg.webp"
+      "image": "assets/covers/arkham-lcg.webp",
+      "average_play_time_minutes": 90
     },
     {
       "id": "arkham-rpg",
@@ -294,7 +326,8 @@
       "identification_status": "verificato",
       "notes": "Fino a 5 investigatori più un Game Master; minimo di 1 investigatore dedotto dal formato GdR. Crediti creativi da controllare sulla scatola italiana.",
       "description": "Un set introduttivo per raccontare e giocare un’avventura nel mondo di Arkham Horror.",
-      "image": "assets/covers/arkham-rpg.webp"
+      "image": "assets/covers/arkham-rpg.webp",
+      "average_play_time_minutes": null
     },
     {
       "id": "arkham-lcg-2",
@@ -320,41 +353,47 @@
           "category": "mazzo investigatore",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/product/arkham-horror-lcg-investigatore-andre-patel/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Arkham Horror LCG – Investigatore Carolyn Fern",
           "category": "mazzo investigatore",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/product/arkham-horror-lcg-investigatore-carolyn-fern/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Arkham Horror LCG – Investigatore Marie Lambeau",
           "category": "mazzo investigatore",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/product/arkham-horror-lcg-investigatore-marie-lambeau/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Arkham Horror LCG – Investigatore Miguel de la Cruz",
           "category": "mazzo investigatore",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/product/arkham-horror-lcg-investigatore-miguel-de-la-cruz/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Arkham Horror LCG – Investigatore Tommy Muldoon",
           "category": "mazzo investigatore",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/product/arkham-horror-lcg-investigatore-tommy-muldoon/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         }
       ],
       "identification_status": "verificato",
       "notes": "Scatola base del Capitolo 2, compatibile con la linea precedente. I cinque mazzi investigatore elencati sono quelli del Capitolo 2 nel catalogo Asmodee Italia.",
       "description": "Un nuovo capitolo del gioco di carte investigativo ambientato nell’universo di Arkham.",
-      "image": "assets/covers/arkham-lcg-2.webp"
+      "image": "assets/covers/arkham-lcg-2.webp",
+      "average_play_time_minutes": 90
     },
     {
       "id": "arkham-3",
@@ -379,27 +418,31 @@
           "category": "espansione",
           "quantity": 1,
           "website_url": "https://www.fantasyflightgames.com/en/news/2019/6/11/dead-of-night/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Arkham Horror: Abissi Oscuri",
           "category": "espansione",
           "quantity": 1,
           "website_url": "https://www.fantasyflightgames.com/en/products/arkham-horror-third-edition/products/under-dark-waves/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Arkham Horror: I Segreti dell'Ordine",
           "category": "espansione",
           "quantity": 1,
           "website_url": "https://www.fantasyflightgames.com/en/news/2021/2/18/secrets-of-order/",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         }
       ],
       "identification_status": "verificato",
       "notes": null,
       "description": "Indaga su inquietanti misteri e affronta insieme agli altri le minacce di Arkham.",
-      "image": "assets/covers/arkham-3.webp"
+      "image": "assets/covers/arkham-3.webp",
+      "average_play_time_minutes": 150
     },
     {
       "id": "arkham-noir",
@@ -420,7 +463,8 @@
       "identification_status": "edizione_da_verificare",
       "notes": "Numero del caso non specificato; la scheda è della serie.",
       "description": "Un’indagine solitaria fatta di carte, indizi e scelte difficili nell’universo lovecraftiano.",
-      "image": "assets/covers/arkham-noir.webp"
+      "image": "assets/covers/arkham-noir.webp",
+      "average_play_time_minutes": 30
     },
     {
       "id": "azul",
@@ -441,7 +485,8 @@
       "identification_status": "verificato",
       "notes": null,
       "description": "Scegli piastrelle colorate e componi mosaici per ottenere la parete più armoniosa.",
-      "image": "assets/covers/azul.webp"
+      "image": "assets/covers/azul.webp",
+      "average_play_time_minutes": 40
     },
     {
       "id": "bang-bullet",
@@ -462,7 +507,8 @@
       "identification_status": "verificato",
       "notes": "Confezione autonoma che include BANG! e varie espansioni.",
       "description": "Duelli, ruoli segreti e colpi di scena nel Far West, in una confezione ricca di contenuti.",
-      "image": "assets/covers/bang-bullet.webp"
+      "image": "assets/covers/bang-bullet.webp",
+      "average_play_time_minutes": 30
     },
     {
       "id": "betrayal",
@@ -483,7 +529,8 @@
       "identification_status": "edizione_da_verificare",
       "notes": "Edizione non specificata; sito riferito al gioco originale.",
       "description": "Esplora una casa infestata che cambia a ogni partita, finché uno di voi potrebbe tradire il gruppo.",
-      "image": "assets/covers/betrayal.webp"
+      "image": "assets/covers/betrayal.webp",
+      "average_play_time_minutes": 60
     },
     {
       "id": "bloodborne",
@@ -505,7 +552,8 @@
       "identification_status": "verificato",
       "notes": null,
       "description": "Affronta mostri e missioni in una campagna cooperativa ispirata al videogioco.",
-      "image": "assets/covers/bloodborne.webp"
+      "image": "assets/covers/bloodborne.webp",
+      "average_play_time_minutes": 60
     },
     {
       "id": "carcassonne",
@@ -526,7 +574,8 @@
       "identification_status": "verificato",
       "notes": null,
       "description": "Costruisci un paesaggio medievale tessera dopo tessera e scegli dove schierare i tuoi seguaci.",
-      "image": "assets/covers/carcassonne.webp"
+      "image": "assets/covers/carcassonne.webp",
+      "average_play_time_minutes": 35
     },
     {
       "id": "cera-nuova",
@@ -549,7 +598,8 @@
       "identification_status": "verificato",
       "notes": "Edizione italiana distribuita da Raven Distribution.",
       "description": "Racconta una fiaba condivisa con le carte di questa nuova edizione narrativa.",
-      "image": "assets/covers/cera-nuova.webp"
+      "image": "assets/covers/cera-nuova.webp",
+      "average_play_time_minutes": 15
     },
     {
       "id": "cera-vecchia",
@@ -573,7 +623,8 @@
       "identification_status": "edizione_da_verificare",
       "notes": "Edizione italiana esatta non specificata; editore indicato è quello originale.",
       "description": "Crea una fiaba insieme agli altri giocatori, intrecciando personaggi, luoghi ed eventi.",
-      "image": "assets/covers/cera-vecchia.webp"
+      "image": "assets/covers/cera-vecchia.webp",
+      "average_play_time_minutes": 15
     },
     {
       "id": "chronicles",
@@ -594,7 +645,8 @@
       "identification_status": "verificato",
       "notes": null,
       "description": "Esamina scene del crimine, interroga sospetti e risolvi casi investigativi con l’aiuto dell’app.",
-      "image": "assets/covers/chronicles.webp"
+      "image": "assets/covers/chronicles.webp",
+      "average_play_time_minutes": 75
     },
     {
       "id": "codex",
@@ -615,7 +667,8 @@
       "identification_status": "verificato",
       "notes": "Edizione italiana Cranio Creations; editore originale Bombyx. Il link è alla pagina dell'editore originale.",
       "description": "Disponi carte sovrapposte e componi un manoscritto ricco di simboli e risorse.",
-      "image": "assets/covers/codex.webp"
+      "image": "assets/covers/codex.webp",
+      "average_play_time_minutes": 25
     },
     {
       "id": "colt",
@@ -636,7 +689,8 @@
       "identification_status": "verificato",
       "notes": null,
       "description": "Programma le tue mosse e assalta un treno in corsa nel Far West.",
-      "image": "assets/covers/colt.webp"
+      "image": "assets/covers/colt.webp",
+      "average_play_time_minutes": 40
     },
     {
       "id": "dead-winter",
@@ -660,13 +714,22 @@
           "category": "espansione",
           "quantity": 1,
           "website_url": "https://media.plaidhatgames.com/old_images/games/dead-of-winter/rules-wc.pdf",
-          "notes": "La modalità due colonie richiede due scatole base compatibili."
+          "notes": "La modalità 4–11 giocatori richiede anche Dead of Winter: The Long Night, oltre al gioco base e a questa espansione.",
+          "extends_player_count": true,
+          "players_with_expansion": {
+            "min": 4,
+            "max": 11
+          },
+          "required_owned_products": [
+            "Dead of Winter: The Long Night"
+          ]
         }
       ],
       "identification_status": "edizione_da_verificare",
       "notes": "La lista non specifica l'edizione della scatola base.",
       "description": "Sopravvivi a un inverno infestato dagli zombie, tra obiettivi comuni e interessi personali.",
-      "image": "assets/covers/dead-winter.webp"
+      "image": "assets/covers/dead-winter.webp",
+      "average_play_time_minutes": 90
     },
     {
       "id": "dixit",
@@ -687,7 +750,8 @@
       "identification_status": "verificato",
       "notes": null,
       "description": "Lascia parlare l’immaginazione: descrivi immagini evocative e indovina la carta giusta.",
-      "image": "assets/covers/dixit.webp"
+      "image": "assets/covers/dixit.webp",
+      "average_play_time_minutes": 30
     },
     {
       "id": "dune",
@@ -708,7 +772,8 @@
       "identification_status": "verificato",
       "notes": null,
       "description": "Conquista influenza su Arrakis combinando carte, agenti e alleanze politiche.",
-      "image": "assets/covers/dune.webp"
+      "image": "assets/covers/dune.webp",
+      "average_play_time_minutes": 90
     },
     {
       "id": "dnd-essentials",
@@ -727,7 +792,8 @@
       "identification_status": "da_confermare",
       "notes": "Identificazione probabile: 'Dragon of Icespire Peak'. I 2–6 includono un Dungeon Master e 1–5 avventurieri.",
       "description": "Un kit per iniziare a vivere avventure fantasy nel mondo di Dungeons & Dragons.",
-      "image": "assets/covers/dnd-essentials.webp"
+      "image": "assets/covers/dnd-essentials.webp",
+      "average_play_time_minutes": null
     },
     {
       "id": "expeditions",
@@ -750,13 +816,19 @@
           "category": "espansione",
           "quantity": 1,
           "website_url": "https://store.stonemaiergames.com/products/expeditions-gears-of-corruption",
-          "notes": "Porta il limite a 6 giocatori."
+          "notes": "Porta il limite a 6 giocatori.",
+          "extends_player_count": true,
+          "players_with_expansion": {
+            "min": 1,
+            "max": 6
+          }
         }
       ],
       "identification_status": "verificato",
       "notes": null,
       "description": "Parti per la Siberia, esplora nuove regioni e costruisci un motore di carte sempre più efficace.",
-      "image": "assets/covers/expeditions.webp"
+      "image": "assets/covers/expeditions.webp",
+      "average_play_time_minutes": 75
     },
     {
       "id": "elder-sign",
@@ -778,7 +850,8 @@
       "identification_status": "verificato",
       "notes": null,
       "description": "Lancia i dadi e supera prove nei corridoi del museo prima che l’orrore si risvegli.",
-      "image": "assets/covers/elder-sign.webp"
+      "image": "assets/covers/elder-sign.webp",
+      "average_play_time_minutes": 90
     },
     {
       "id": "fate-fellowship",
@@ -799,7 +872,8 @@
       "identification_status": "verificato",
       "notes": "Il titolo compare due volte nella lista; registrato una volta sola.",
       "description": "Accompagna la Compagnia nel suo viaggio attraverso la Terra di Mezzo, cooperando per evitare la rovina.",
-      "image": "assets/covers/fate-fellowship.webp"
+      "image": "assets/covers/fate-fellowship.webp",
+      "average_play_time_minutes": 75
     },
     {
       "id": "incipit",
@@ -818,7 +892,8 @@
       "identification_status": "verificato",
       "notes": "Numero giocatori non indicato nelle fonti consultate.",
       "description": "Inventate storie insieme lasciando che dadi e spunti narrativi guidino l’immaginazione.",
-      "image": "assets/covers/incipit.webp"
+      "image": "assets/covers/incipit.webp",
+      "average_play_time_minutes": null
     },
     {
       "id": "great-wall",
@@ -841,7 +916,8 @@
       "identification_status": "verificato",
       "notes": null,
       "description": "Coordina i tuoi lavoratori e difendi la Grande Muraglia dalle incursioni.",
-      "image": "assets/covers/great-wall.webp"
+      "image": "assets/covers/great-wall.webp",
+      "average_play_time_minutes": 150
     },
     {
       "id": "mansions",
@@ -862,7 +938,8 @@
       "identification_status": "verificato",
       "notes": null,
       "description": "Esplora dimore infestate, cerca indizi e affronta gli orrori guidati dall’app.",
-      "image": "assets/covers/mansions.webp"
+      "image": "assets/covers/mansions.webp",
+      "average_play_time_minutes": 150
     },
     {
       "id": "mythos",
@@ -883,7 +960,8 @@
       "identification_status": "edizione_da_verificare",
       "notes": "La lista non indica l'edizione; la scheda usa la nuova edizione italiana.",
       "description": "Collabora per sciogliere misteri e seguire indizi in un’indagine dalle tinte oscure.",
-      "image": "assets/covers/mythos.webp"
+      "image": "assets/covers/mythos.webp",
+      "average_play_time_minutes": 75
     },
     {
       "id": "one-small-step",
@@ -904,7 +982,8 @@
       "identification_status": "verificato",
       "notes": null,
       "description": "Rivivi la corsa allo spazio tra programmi, missioni e scelte strategiche.",
-      "image": "assets/covers/one-small-step.webp"
+      "image": "assets/covers/one-small-step.webp",
+      "average_play_time_minutes": 90
     },
     {
       "id": "wistar",
@@ -926,7 +1005,8 @@
       "identification_status": "verificato",
       "notes": null,
       "description": "Guida una colonia di ratti inventori tra esplorazione, risorse e nuove costruzioni.",
-      "image": "assets/covers/wistar.webp"
+      "image": "assets/covers/wistar.webp",
+      "average_play_time_minutes": 90
     },
     {
       "id": "root",
@@ -947,7 +1027,8 @@
       "identification_status": "verificato",
       "notes": null,
       "description": "Quattro fazioni asimmetriche si contendono il controllo di un bosco pieno di intrighi.",
-      "image": "assets/covers/root.webp"
+      "image": "assets/covers/root.webp",
+      "average_play_time_minutes": 75
     },
     {
       "id": "scythe",
@@ -970,27 +1051,35 @@
           "category": "espansione",
           "quantity": 1,
           "website_url": "https://store.stonemaiergames.com/products/scythe-invaders-from-afar",
-          "notes": null
+          "notes": null,
+          "extends_player_count": true,
+          "players_with_expansion": {
+            "min": 1,
+            "max": 7
+          }
         },
         {
           "name": "Scythe: The Wind Gambit",
           "category": "espansione",
           "quantity": 1,
           "website_url": "https://store.stonemaiergames.com/products/scythe-the-wind-gambit",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         },
         {
           "name": "Scythe: The Rise of Fenris",
           "category": "espansione",
           "quantity": 1,
           "website_url": "https://store.stonemaiergames.com/products/scythe-the-rise-of-fenris",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         }
       ],
       "identification_status": "verificato",
       "notes": null,
       "description": "Guida una fazione in un’Europa alternativa tra sviluppo, risorse e controllo del territorio.",
-      "image": "assets/covers/scythe.webp"
+      "image": "assets/covers/scythe.webp",
+      "average_play_time_minutes": 115
     },
     {
       "id": "sherlock-carlton",
@@ -1013,7 +1102,8 @@
       "identification_status": "verificato",
       "notes": null,
       "description": "Segui gli indizi tra Carlton House e Queen’s Park nei panni dei consulenti di Sherlock Holmes.",
-      "image": "assets/covers/sherlock-carlton.webp"
+      "image": "assets/covers/sherlock-carlton.webp",
+      "average_play_time_minutes": 90
     },
     {
       "id": "sherlock-thames",
@@ -1036,7 +1126,8 @@
       "identification_status": "edizione_da_verificare",
       "notes": "Identificazione probabile della scatola senza sottotitolo; da confermare dalla copertina.",
       "description": "Esamina giornali, mappe e testimonianze per risolvere i delitti del Tamigi.",
-      "image": "assets/covers/sherlock-thames.webp"
+      "image": "assets/covers/sherlock-thames.webp",
+      "average_play_time_minutes": 90
     },
     {
       "id": "sherlock-jack",
@@ -1058,7 +1149,8 @@
       "identification_status": "verificato",
       "notes": null,
       "description": "Indaga sui crimini di Jack lo Squartatore e sui casi del West End vittoriano.",
-      "image": "assets/covers/sherlock-jack.webp"
+      "image": "assets/covers/sherlock-jack.webp",
+      "average_play_time_minutes": 90
     },
     {
       "id": "scholars",
@@ -1080,7 +1172,8 @@
       "identification_status": "verificato",
       "notes": null,
       "description": "Studia antichi manoscritti, traduci testi e pianifica l’uso di lavoratori e dadi.",
-      "image": "assets/covers/scholars.webp"
+      "image": "assets/covers/scholars.webp",
+      "average_play_time_minutes": 75
     },
     {
       "id": "white-castle",
@@ -1104,13 +1197,15 @@
           "category": "espansione",
           "quantity": 1,
           "website_url": "https://devir.cl/8436607944348",
-          "notes": null
+          "notes": null,
+          "extends_player_count": false
         }
       ],
       "identification_status": "verificato",
       "notes": null,
       "description": "Pianifica ogni dado per ottenere influenza alla corte del Castello Bianco.",
-      "image": "assets/covers/white-castle.webp"
+      "image": "assets/covers/white-castle.webp",
+      "average_play_time_minutes": 60
     },
     {
       "id": "ticket-europa",
@@ -1131,7 +1226,8 @@
       "identification_status": "verificato",
       "notes": null,
       "description": "Collega le città europee con le tue linee ferroviarie e completa i biglietti destinazione.",
-      "image": "assets/covers/ticket-europa.webp"
+      "image": "assets/covers/ticket-europa.webp",
+      "average_play_time_minutes": 45
     },
     {
       "id": "ticket-europa-15",
@@ -1153,7 +1249,8 @@
       "identification_status": "verificato",
       "notes": "Edizione autonoma da collezione; il link è alla pagina stampa dell'editore.",
       "description": "L’avventura ferroviaria attraverso l’Europa in una speciale edizione del 15° anniversario.",
-      "image": "assets/covers/ticket-europa-15.webp"
+      "image": "assets/covers/ticket-europa-15.webp",
+      "average_play_time_minutes": 45
     },
     {
       "id": "time-stories",
@@ -1176,27 +1273,31 @@
           "category": "scenario",
           "quantity": 1,
           "website_url": "https://www.spacecowboys-games.com/game/time-stories/",
-          "notes": "Link alla pagina della serie."
+          "notes": "Link alla pagina della serie.",
+          "extends_player_count": false
         },
         {
           "name": "T.I.M.E Stories: Lumen Fidei",
           "category": "scenario",
           "quantity": 1,
           "website_url": "https://www.spacecowboys-games.com/game/time-stories/",
-          "notes": "Link alla pagina della serie."
+          "notes": "Link alla pagina della serie.",
+          "extends_player_count": false
         },
         {
           "name": "T.I.M.E Stories: Spedizione Endurance",
           "category": "scenario",
           "quantity": 2,
           "website_url": "https://www.spacecowboys-games.com/game/time-stories/",
-          "notes": "Link alla pagina della serie."
+          "notes": "Link alla pagina della serie.",
+          "extends_player_count": false
         }
       ],
       "identification_status": "verificato",
       "notes": null,
       "description": "Viaggia attraverso scenari narrativi e risolvi misteri prima che il tempo finisca.",
-      "image": "assets/covers/time-stories.webp"
+      "image": "assets/covers/time-stories.webp",
+      "average_play_time_minutes": 90
     },
     {
       "id": "set-watch",
@@ -1217,7 +1318,8 @@
       "identification_status": "verificato",
       "notes": "Titolo originale Set a Watch: Forsaken Isles; espansione autonoma.",
       "description": "Difendi il campo dalle creature dell’oscurità con una squadra di avventurieri.",
-      "image": "assets/covers/set-watch.webp"
+      "image": "assets/covers/set-watch.webp",
+      "average_play_time_minutes": 60
     },
     {
       "id": "whitehall",
@@ -1239,7 +1341,8 @@
       "identification_status": "verificato",
       "notes": null,
       "description": "Un investigatore in fuga e una squadra sulle sue tracce: deduci i movimenti nascosti.",
-      "image": "assets/covers/whitehall.webp"
+      "image": "assets/covers/whitehall.webp",
+      "average_play_time_minutes": 45
     }
   ]
 }

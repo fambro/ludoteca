@@ -1,4 +1,4 @@
-const dataUrl = new URL('data/ludoteca.json?v=a83e5629b3340a4eb1ed998e4f36feb50d765012e4589d68965e64182bb1ac00', document.baseURI);
+const dataUrl = new URL('data/ludoteca.json?v=e461d1f6970551a543b49f605cfada10605cb0e9ce626a972e42a91bd81ed4b5', document.baseURI);
 const elements = {
   grid: document.querySelector('#game-grid'),
   search: document.querySelector('#search-input'),
@@ -16,6 +16,7 @@ const elements = {
   drawerImage: document.querySelector('#drawer-image'),
   drawerImageFallback: document.querySelector('#drawer-image-fallback'),
   drawerPlayers: document.querySelector('#drawer-players'),
+  drawerPlayTime: document.querySelector('#drawer-play-time'),
   drawerPublisher: document.querySelector('#drawer-publisher'),
   drawerAuthors: document.querySelector('#drawer-authors'),
   drawerEditionRow: document.querySelector('#drawer-edition-row'),
@@ -53,6 +54,14 @@ function playerLabel(players) {
   return players.min === players.max ? `${players.min} giocatore${players.min === 1 ? '' : 'i'}` : `${players.min}–${players.max} giocatori`;
 }
 
+function validPlayerRange(range) {
+  return range && Number.isInteger(range.min) && Number.isInteger(range.max) && range.min > 0 && range.max >= range.min;
+}
+
+function includesPlayerCount(range, count) {
+  return validPlayerRange(range) && count >= range.min && count <= range.max;
+}
+
 function contentCountLabel(count) {
   return `${count} ${count === 1 ? 'contenuto' : 'contenuti'}`;
 }
@@ -67,6 +76,9 @@ function openDrawer(game, trigger) {
   elements.drawerDescription.textContent = game.description || 'Un gioco della collezione da scoprire insieme.';
   elements.drawerCategory.textContent = categoriesOf(game).join(' · ') || 'Gioco da tavolo';
   elements.drawerPlayers.textContent = playerLabel(game.players);
+  elements.drawerPlayTime.textContent = Number.isInteger(game.average_play_time_minutes)
+    ? `circa ${game.average_play_time_minutes} min`
+    : 'Da verificare';
   elements.drawerPublisher.textContent = game.publisher || 'Da verificare';
   elements.drawerAuthors.textContent = Array.isArray(game.authors) && game.authors.length ? game.authors.join(', ') : 'Da verificare';
   elements.drawerEditionRow.hidden = !game.edition;
@@ -139,6 +151,12 @@ function openDrawer(game, trigger) {
       quantity.className = 'drawer-content-quantity';
       quantity.textContent = `×${content.quantity}`;
       information.append(quantity);
+    }
+    if (content.extends_player_count && content.players_with_expansion) {
+      const playerExtension = document.createElement('p');
+      playerExtension.className = 'drawer-content-player-extension';
+      playerExtension.textContent = `Modalità con espansione: ${playerLabel(content.players_with_expansion)}`;
+      information.append(playerExtension);
     }
     if (content.notes) {
       const note = document.createElement('p');
@@ -257,6 +275,22 @@ function createGameCard(game, index) {
   players.className = 'tag tag-players';
   players.textContent = playerLabel(game.players);
   meta.append(players);
+  const requestedPlayers = Number(elements.players.value);
+  if (requestedPlayers && !includesPlayerCount(game.players, requestedPlayers)) {
+    const matchingExpansion = game._playerRanges.find(({ expansion, players: range }) => expansion && includesPlayerCount(range, requestedPlayers));
+    if (matchingExpansion) {
+      const expansionPlayers = document.createElement('span');
+      expansionPlayers.className = 'tag tag-expansion-players';
+      expansionPlayers.textContent = `fino a ${matchingExpansion.players.max} con esp.`;
+      meta.append(expansionPlayers);
+    }
+  }
+  if (Number.isInteger(game.average_play_time_minutes) && game.average_play_time_minutes > 0) {
+    const playTime = document.createElement('span');
+    playTime.className = 'tag tag-play-time';
+    playTime.textContent = `≈ ${game.average_play_time_minutes} min`;
+    meta.append(playTime);
+  }
   categoriesOf(game).slice(0, 2).forEach((value) => {
     const chip = document.createElement('span');
     chip.className = 'tag';
@@ -288,7 +322,7 @@ function render() {
   const selected = games.filter((game) => {
     if (terms.length && !terms.every((term) => game._search.includes(term))) return false;
     if (category && !categoriesOf(game).includes(category)) return false;
-    if (players && (!game.players || players < game.players.min || players > game.players.max)) return false;
+    if (players && !game._playerRanges.some(({ players: range }) => includesPlayerCount(range, players))) return false;
     return true;
   });
 
@@ -323,11 +357,21 @@ async function loadGames() {
       primary.otherVersions.push(game);
     }
     games = allGames.filter((game) => !game.version_of);
-    games.forEach((game) => { game._search = searchText(game); });
+    const ownedProducts = new Set(allGames.flatMap((game) => [game.name, ...(game.owned_content || []).map((content) => content.name)]).map(normalize));
+    games.forEach((game) => {
+      game._search = searchText(game);
+      game._playerRanges = [];
+      if (validPlayerRange(game.players)) game._playerRanges.push({ players: game.players, expansion: null });
+      for (const content of game.owned_content || []) {
+        if (!content.extends_player_count || !validPlayerRange(content.players_with_expansion)) continue;
+        if (!(content.required_owned_products || []).every((name) => ownedProducts.has(normalize(name)))) continue;
+        game._playerRanges.push({ players: content.players_with_expansion, expansion: content });
+      }
+    });
     const categories = [...new Set(games.flatMap(categoriesOf))].sort(collator.compare);
     elements.category.replaceChildren(new Option('Tutte le categorie', ''), ...categories.map((value) => new Option(value[0].toUpperCase() + value.slice(1), value)));
-    const maximum = Math.max(0, ...games.map((game) => game.players?.max || 0));
-    elements.players.replaceChildren(new Option('N° giocatori', ''), ...Array.from({ length: maximum }, (_, index) => new Option(`${index + 1} ${index === 0 ? 'giocatore' : 'giocatori'}`, String(index + 1))));
+    const playerCounts = [...new Set(games.flatMap((game) => game._playerRanges.flatMap(({ players: range }) => Array.from({ length: range.max - range.min + 1 }, (_, index) => range.min + index))))].sort((a, b) => a - b);
+    elements.players.replaceChildren(new Option('N° giocatori', ''), ...playerCounts.map((count) => new Option(`${count} ${count === 1 ? 'giocatore' : 'giocatori'}`, String(count))));
     render();
   } catch (error) {
     console.error('Errore nel caricamento della ludoteca:', error);

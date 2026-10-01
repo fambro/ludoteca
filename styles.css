@@ -105,7 +105,8 @@ h1,h2,h3,p{margin-top:0}
 .card-description{color:#777b73;font-size:13px;line-height:1.55;margin:0 0 18px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
 .card-meta{margin-top:auto;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
 .tag{display:inline-flex;align-items:center;min-height:26px;padding:5px 8px;border-radius:3px;background:#f3f1eb;color:#64685f;font-size:10px;font-weight:700;line-height:1.1}
-.tag-players{background:#e9f0ec;color:#2d5a4d}
+.tag-players,.tag-expansion-players{background:#e9f0ec;color:#2d5a4d}
+.tag-play-time{background:#fbede5;color:#925337}
 .card-detail-hint{display:block;margin-top:18px;color:var(--dark);font-size:11px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase}
 .game-card:hover .card-detail-hint{color:var(--orange)}
 .empty-state{text-align:center;background:#f8f5ef;padding:70px 20px;border:1px dashed #dcd6c9}
@@ -161,6 +162,7 @@ body.drawer-open{overflow:hidden}
 .drawer-content-item strong{font-size:14px;line-height:1.35;font-weight:700;overflow-wrap:anywhere}
 .drawer-content-quantity{display:inline-block;margin-left:7px;color:#627169;font-size:12px;font-weight:800}
 .drawer-content-item p{margin:6px 0 0;color:#777b73;font-size:12px;line-height:1.45}
+.drawer-content-item .drawer-content-player-extension{color:#2d5a4d;font-weight:700}
 .drawer-content-item a,.drawer-version-item a{display:grid;place-items:center;flex:none;width:30px;height:30px;border:1px solid var(--line);border-radius:50%;color:var(--dark);font-size:17px}
 .drawer-content-item a:hover,.drawer-version-item a:hover{border-color:var(--orange);color:var(--orange)}
 .drawer-contents>p{margin:18px 0 0;padding:19px;background:#f5f2eb;color:#777b73;font-size:13px;line-height:1.5}
