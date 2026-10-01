@@ -4,6 +4,7 @@ const elements = {
   search: document.querySelector('#search-input'),
   category: document.querySelector('#category-filter'),
   players: document.querySelector('#players-filter'),
+  duration: document.querySelector('#duration-filter'),
   count: document.querySelector('#results-count'),
   clear: document.querySelector('#clear-filters'),
   empty: document.querySelector('#empty-state'),
@@ -315,28 +316,62 @@ function searchText(game) {
   return normalize(versions.flatMap((version) => [version.name, version.title_in_list, version.edition, version.type, version.publisher, ...(version.authors || [])]).join(' '));
 }
 
+function writeFiltersToUrl(replace = false) {
+  const url = new URL(window.location.href);
+  const values = {
+    q: elements.search.value.trim(),
+    category: elements.category.value,
+    players: elements.players.value,
+    max_minutes: elements.duration.value,
+  };
+  for (const [key, value] of Object.entries(values)) {
+    if (value) url.searchParams.set(key, value);
+    else url.searchParams.delete(key);
+  }
+  if (url.href !== window.location.href) {
+    window.history[replace ? 'replaceState' : 'pushState'](null, '', `${url.pathname}${url.search}${url.hash}`);
+  }
+}
+
+function readFiltersFromUrl() {
+  const params = new URL(window.location.href).searchParams;
+  elements.search.value = params.get('q') || '';
+  for (const [element, key] of [[elements.category, 'category'], [elements.players, 'players'], [elements.duration, 'max_minutes']]) {
+    const requested = params.get(key) || '';
+    element.value = [...element.options].some((option) => option.value === requested) ? requested : '';
+  }
+}
+
 function render() {
   const terms = normalize(elements.search.value).split(/\s+/).filter(Boolean);
   const category = elements.category.value;
   const players = Number(elements.players.value);
+  const maxMinutes = Number(elements.duration.value);
   const selected = games.filter((game) => {
     if (terms.length && !terms.every((term) => game._search.includes(term))) return false;
     if (category && !categoriesOf(game).includes(category)) return false;
     if (players && !game._playerRanges.some(({ players: range }) => includesPlayerCount(range, players))) return false;
+    if (maxMinutes && (!Number.isInteger(game.average_play_time_minutes) || game.average_play_time_minutes > maxMinutes)) return false;
     return true;
   });
 
   elements.grid.replaceChildren(...selected.map(createGameCard));
   elements.count.innerHTML = `<strong>${selected.length}</strong> ${selected.length === 1 ? 'gioco trovato' : 'giochi trovati'}`;
   elements.empty.hidden = selected.length !== 0;
-  elements.clear.hidden = !terms.length && !category && !players;
+  elements.clear.hidden = !terms.length && !category && !players && !maxMinutes;
+}
+
+function applyFilterChange(replace = false) {
+  writeFiltersToUrl(replace);
+  render();
 }
 
 function resetFilters() {
   elements.search.value = '';
   elements.category.value = '';
   elements.players.value = '';
-  render();
+  elements.duration.value = '';
+  applyFilterChange();
   elements.search.focus();
 }
 
@@ -372,6 +407,12 @@ async function loadGames() {
     elements.category.replaceChildren(new Option('Tutte le categorie', ''), ...categories.map((value) => new Option(value[0].toUpperCase() + value.slice(1), value)));
     const playerCounts = [...new Set(games.flatMap((game) => game._playerRanges.flatMap(({ players: range }) => Array.from({ length: range.max - range.min + 1 }, (_, index) => range.min + index))))].sort((a, b) => a - b);
     elements.players.replaceChildren(new Option('N° giocatori', ''), ...playerCounts.map((count) => new Option(`${count} ${count === 1 ? 'giocatore' : 'giocatori'}`, String(count))));
+    const durationLimits = [30, 45, 60, 90, 120, 180];
+    const longestGame = Math.max(0, ...games.map((game) => game.average_play_time_minutes || 0));
+    while (durationLimits.at(-1) < longestGame) durationLimits.push(durationLimits.at(-1) + 60);
+    elements.duration.replaceChildren(new Option('Durata max', ''), ...durationLimits.map((minutes) => new Option(`Fino a ${minutes} min`, String(minutes))));
+    readFiltersFromUrl();
+    writeFiltersToUrl(true);
     render();
   } catch (error) {
     console.error('Errore nel caricamento della ludoteca:', error);
@@ -381,9 +422,15 @@ async function loadGames() {
   }
 }
 
-elements.search.addEventListener('input', render);
-elements.category.addEventListener('change', render);
-elements.players.addEventListener('change', render);
+elements.search.addEventListener('input', () => applyFilterChange(true));
+elements.category.addEventListener('change', () => applyFilterChange());
+elements.players.addEventListener('change', () => applyFilterChange());
+elements.duration.addEventListener('change', () => applyFilterChange());
+window.addEventListener('popstate', () => {
+  if (!games.length) return;
+  readFiltersFromUrl();
+  render();
+});
 elements.clear.addEventListener('click', resetFilters);
 document.querySelector('#empty-reset').addEventListener('click', resetFilters);
 document.querySelector('#retry-button').addEventListener('click', loadGames);

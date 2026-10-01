@@ -7,8 +7,8 @@
     <meta name="description" content="Esplora la mia ludoteca: cerca giochi da tavolo per titolo, categoria, autore, editore e numero di giocatori.">
     <title>Ludoteca di Flavio</title>
     <link rel="preload" href="data/ludoteca.json?v=e461d1f6970551a543b49f605cfada10605cb0e9ce626a972e42a91bd81ed4b5" as="fetch" crossorigin>
-    <link rel="stylesheet" href="styles.css?v=dd9b8e9e235b7cd1da526c43dd664e1e0f809afadf115c0cf1fd517be29c2f3f">
-    <script src="script.js?v=83fa3488481a5436e9ea8201d810891c2aa8de258f08de1ef874e5557c8cbd36" defer></script>
+    <link rel="stylesheet" href="styles.css?v=1a5f8ad89403b8b6ca725c443d419349b1acf4ea59ba42a7fb0ce2e2ca3a476c">
+    <script src="script.js?v=de600f5149de31b751507029ff8923a7158695091e9e5c66d3907146d2b42017" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#catalogo">Vai al catalogo</a>
@@ -42,6 +42,10 @@
             <div class="select-wrap players-select">
               <label class="sr-only" for="players-filter">Numero di giocatori</label>
               <select id="players-filter"><option value="">N° giocatori</option></select>
+            </div>
+            <div class="select-wrap duration-select">
+              <label class="sr-only" for="duration-filter">Durata massima indicativa</label>
+              <select id="duration-filter"><option value="">Durata max</option></select>
             </div>
           </div>
 
