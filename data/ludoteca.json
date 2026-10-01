@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "lingua": "it",
   "aggiornato_il": "2026-09-30",
   "criteri": {
@@ -8,6 +8,7 @@
     "contenuti_posseduti": "Espansioni, scenari e mazzi dichiarati dall'utente; la quantità è 1 salvo indicazione diversa.",
     "link_sito": "Preferibilmente pagina dell'editore; in mancanza, pagina informativa verificata. Null significa titolo non identificato.",
     "autori": "Autori del gioco base; null se non verificati.",
+    "versione_di": "ID della versione principale dello stesso gioco; la versione collegata compare nel pannello laterale e non come card separata.",
     "descrizione": "Testo breve originale per la scheda del catalogo.",
     "immagine": "Percorso relativo a una copertina locale; null usa una copertina illustrata di riserva."
   },
@@ -35,6 +36,7 @@
     },
     {
       "id": "ticket-europa-15",
+      "versione_di": "ticket-europa",
       "nome": "Ticket to Ride: Europa – 15° anniversario",
       "titolo_nella_lista": "Ticket to Ride Europa edizione 15 anni",
       "casa_editrice": "Days of Wonder",
@@ -149,6 +151,7 @@
     },
     {
       "id": "cera-vecchia",
+      "versione_di": "cera-nuova",
       "nome": "C'era una volta",
       "titolo_nella_lista": "C'era una volta (vecchia edizione)",
       "casa_editrice": "Atlas Games",

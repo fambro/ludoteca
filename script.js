@@ -18,6 +18,11 @@ const elements = {
   drawerPlayers: document.querySelector('#drawer-players'),
   drawerPublisher: document.querySelector('#drawer-publisher'),
   drawerAuthors: document.querySelector('#drawer-authors'),
+  drawerEditionRow: document.querySelector('#drawer-edition-row'),
+  drawerEdition: document.querySelector('#drawer-edition'),
+  drawerVersions: document.querySelector('#drawer-versions'),
+  drawerVersionsCount: document.querySelector('#drawer-versions-count'),
+  drawerVersionsList: document.querySelector('#drawer-versions-list'),
   drawerContentsCount: document.querySelector('#drawer-contents-count'),
   drawerContentsList: document.querySelector('#drawer-contents-list'),
   drawerContentsEmpty: document.querySelector('#drawer-contents-empty'),
@@ -64,6 +69,8 @@ function openDrawer(game, trigger) {
   elements.drawerPlayers.textContent = playerLabel(game.giocatori);
   elements.drawerPublisher.textContent = game.casa_editrice || 'Da verificare';
   elements.drawerAuthors.textContent = Array.isArray(game.autori) && game.autori.length ? game.autori.join(', ') : 'Da verificare';
+  elements.drawerEditionRow.hidden = !game.edizione;
+  elements.drawerEdition.textContent = game.edizione || '';
 
   elements.drawerImage.hidden = !game.immagine;
   elements.drawerImageFallback.hidden = Boolean(game.immagine);
@@ -74,6 +81,46 @@ function openDrawer(game, trigger) {
   } else {
     elements.drawerImage.removeAttribute('src');
   }
+
+  const versions = game.altre_versioni || [];
+  elements.drawerVersions.hidden = versions.length === 0;
+  elements.drawerVersionsCount.textContent = `${versions.length} ${versions.length === 1 ? 'versione' : 'versioni'}`;
+  elements.drawerVersionsList.replaceChildren(...versions.map((version) => {
+    const item = document.createElement('li');
+    item.className = 'drawer-version-item';
+    const cover = document.createElement('div');
+    cover.className = 'drawer-version-cover';
+    if (version.immagine) {
+      const image = document.createElement('img');
+      image.src = version.immagine;
+      image.alt = '';
+      image.loading = 'lazy';
+      cover.append(image);
+    }
+    const information = document.createElement('div');
+    information.className = 'drawer-version-info';
+    const edition = document.createElement('span');
+    edition.textContent = version.edizione || 'Altra edizione';
+    const name = document.createElement('strong');
+    name.textContent = version.nome;
+    information.append(edition, name);
+    if (version.note) {
+      const note = document.createElement('p');
+      note.textContent = version.note;
+      information.append(note);
+    }
+    item.append(cover, information);
+    if (version.link_sito) {
+      const link = document.createElement('a');
+      link.href = version.link_sito;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.setAttribute('aria-label', `Apri la pagina di ${version.nome}, ${version.edizione || 'altra edizione'}, in una nuova scheda`);
+      link.textContent = '↗';
+      item.append(link);
+    }
+    return item;
+  }));
 
   elements.drawerContentsCount.textContent = contentCountLabel(contents.length);
   elements.drawerContentsEmpty.hidden = contents.length > 0;
@@ -220,14 +267,18 @@ function createGameCard(game, index) {
   const detailHint = document.createElement('span');
   detailHint.className = 'card-detail-hint';
   const contentCount = Array.isArray(game.contenuti_posseduti) ? game.contenuti_posseduti.length : 0;
-  detailHint.textContent = contentCount ? `Dettagli · ${contentCountLabel(contentCount)} ↗` : 'Apri dettagli ↗';
+  const details = [];
+  if (game.altre_versioni?.length) details.push(`${game.altre_versioni.length + 1} versioni`);
+  if (contentCount) details.push(contentCountLabel(contentCount));
+  detailHint.textContent = `${details.length ? `Dettagli · ${details.join(' · ')}` : 'Apri dettagli'} ↗`;
   body.append(detailHint);
   article.append(openButton, cover, body);
   return article;
 }
 
 function searchText(game) {
-  return normalize([game.nome, game.titolo_nella_lista, game.tipologia, game.casa_editrice, ...(game.autori || [])].join(' '));
+  const versions = [game, ...(game.altre_versioni || [])];
+  return normalize(versions.flatMap((version) => [version.nome, version.titolo_nella_lista, version.edizione, version.tipologia, version.casa_editrice, ...(version.autori || [])]).join(' '));
 }
 
 function render() {
@@ -262,7 +313,17 @@ async function loadGames() {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     if (!Array.isArray(data.giochi)) throw new Error('Formato dati non valido');
-    games = data.giochi.map((game) => ({ ...game, _search: searchText(game) }));
+    const allGames = data.giochi.map((game) => ({ ...game, altre_versioni: [] }));
+    const byId = new Map(allGames.map((game) => [game.id, game]));
+    if (byId.size !== allGames.length) throw new Error('ID dei giochi duplicati');
+    for (const game of allGames) {
+      if (!game.versione_di) continue;
+      const primary = byId.get(game.versione_di);
+      if (!primary || primary.versione_di) throw new Error(`Versione principale non valida: ${game.versione_di}`);
+      primary.altre_versioni.push(game);
+    }
+    games = allGames.filter((game) => !game.versione_di);
+    games.forEach((game) => { game._search = searchText(game); });
     const categories = [...new Set(games.flatMap(categoriesOf))].sort(collator.compare);
     elements.category.replaceChildren(new Option('Tutte le categorie', ''), ...categories.map((value) => new Option(value[0].toUpperCase() + value.slice(1), value)));
     const maximum = Math.max(0, ...games.map((game) => game.giocatori?.max || 0));
