@@ -1,0 +1,16 @@
+{
+  "id": "./",
+  "name": "Ludoteca di Flavio",
+  "short_name": "Ludoteca",
+  "description": "La mia collezione di giochi da tavolo",
+  "lang": "it",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f2e9",
+  "theme_color": "#f6f2e9",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

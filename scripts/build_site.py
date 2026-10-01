@@ -34,6 +34,13 @@ def main() -> None:
     (OUTPUT / "data" / "ludoteca.json").write_text(
         json.dumps(catalog, ensure_ascii=False, separators=(",", ":")), encoding="utf-8"
     )
+    shutil.copy2(ROOT / "manifest.webmanifest", OUTPUT / "manifest.webmanifest")
+
+    for size in (180, 192, 512):
+        icon = Path("assets") / "icons" / f"icon-{size}.png"
+        destination = OUTPUT / icon
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(ROOT / icon, destination)
 
     for image in sorted(images):
         destination = OUTPUT / image

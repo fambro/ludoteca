@@ -45,17 +45,23 @@ Run `python3 scripts/sort_ludoteca.py` to sort `games` by title. The script uses
 
 ## Browser cache versions
 
-After editing `styles.css`, `script.js`, or `data/ludoteca.json`, run:
+After editing `styles.css`, `script.js`, `data/ludoteca.json`, the manifest, or a cover image, run:
 
 ```sh
 python3 scripts/update_asset_hashes.py
 ```
 
-The offline script appends the full SHA-256 digest as `?v=` to the CSS, JavaScript, and JSON URLs. It updates the JSON URL in both `script.js` and the HTML preload, then hashes the updated JavaScript and writes its URL into `index.html`. Commit the changed files together. Use `python3 scripts/update_asset_hashes.py --check` to detect stale references without modifying files.
+The offline script appends the full SHA-256 digest as `?v=` to the CSS, JavaScript, and JSON URLs. It updates the JSON URL in both `script.js` and the HTML preload, then hashes the updated JavaScript and writes its URL into `index.html`. It also regenerates `sw.js` with a cache version derived from the page, catalog, icons, and covers. Commit the changed files together. Use `python3 scripts/update_asset_hashes.py --check` to detect stale references without modifying files.
+
+## Installable and offline
+
+The web app manifest provides the home-screen name, icon, and standalone display. GitHub Pages serves it over HTTPS. The service worker caches the page, CSS, JavaScript, catalog, icons, and all covers (about 2.3 MB), so the library works offline after the first successful visit. External game sites and manuals still require a connection.
+
+When online, navigation checks for the latest page. Each deployment generates a different `sw.js` whenever cached content changes; the new worker downloads a complete new cache before activating, then removes old caches. A previously open tab may keep using the old offline copy until it is closed and reopened. On a locally served source checkout, run the hash update script after edits to keep the worker current.
 
 ## GitHub Pages build
 
-The deploy workflow runs `npm ci` and `npm run build`, then uploads only `_site/`. The build minifies CSS and JavaScript with esbuild, compacts the catalog JSON, and copies only the cover images referenced by it. It calculates SHA-256 versions from those final files. Source files are not changed by the build; `_site/` and `node_modules/` are ignored by Git.
+The deploy workflow runs `npm ci` and `npm run build`, then uploads only `_site/`. The build minifies CSS and JavaScript with esbuild, compacts the catalog JSON, and copies only the cover images referenced by it, plus the manifest and app icons. It calculates SHA-256 versions and generates the service worker from those final files. Source files are not changed by the build; `_site/` and `node_modules/` are ignored by Git.
 
 To inspect the same output locally:
 
