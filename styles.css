@@ -86,8 +86,7 @@ h1,h2,h3,p{margin-top:0}
 
 .game-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
 .game-card{position:relative;background:#fff;border:1px solid #eae8e1;border-radius:5px;overflow:hidden;box-shadow:0 7px 20px rgba(30,32,25,.035);display:flex;flex-direction:column;min-width:0;transition:transform .22s,box-shadow .22s}
-.game-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
-.card-open{position:absolute;inset:0;z-index:2;width:100%;height:100%;padding:0;border:0;border-radius:inherit;background:transparent;cursor:pointer}
+.card-open{position:absolute;inset:0;z-index:2;width:100%;height:100%;padding:0;border:0;border-radius:inherit;background:transparent;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .card-open:focus-visible{outline:3px solid var(--orange);outline-offset:-4px}
 .game-cover{aspect-ratio:1.15;position:relative;overflow:hidden;background:var(--cover-bg);color:var(--cover-fg)}
 .game-cover:before{content:"";position:absolute;inset:11%;border:1px solid currentColor;opacity:.34;transform:rotate(-12deg)}
@@ -108,7 +107,9 @@ h1,h2,h3,p{margin-top:0}
 .tag-players,.tag-expansion-players{background:#e9f0ec;color:#2d5a4d}
 .tag-play-time{background:#fbede5;color:#925337}
 .card-detail-hint{display:block;margin-top:18px;color:var(--dark);font-size:11px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase}
-.game-card:hover .card-detail-hint{color:var(--orange)}
+@media(hover:hover) and (pointer:fine){body:not(.drawer-open) .game-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+body:not(.drawer-open) .game-card:hover .card-detail-hint{color:var(--orange)}
+}
 .empty-state{text-align:center;background:#f8f5ef;padding:70px 20px;border:1px dashed #dcd6c9}
 .empty-state>span{display:block;font-size:50px;color:var(--orange);margin-bottom:15px}
 .empty-state h3{font-family:Georgia,serif;font-size:32px;font-weight:400;margin:0 0 10px}
@@ -121,6 +122,7 @@ h1,h2,h3,p{margin-top:0}
 .site-footer a{font-weight:700;color:var(--dark)}
 
 body.drawer-open{overflow:hidden}
+body.drawer-open .game-card{transition:none}
 .game-drawer{position:fixed;inset:0 0 0 auto;width:min(100%,560px);height:100dvh;max-width:none;max-height:100dvh;margin:0;padding:0;border:0;background:#fffdf9;color:var(--ink);box-shadow:-20px 0 55px rgba(22,31,27,.22);overflow-y:auto;overscroll-behavior:contain;transform:translateX(100%);transition:transform .3s cubic-bezier(.22,1,.36,1)}
 .game-drawer.is-visible{transform:translateX(0)}
 .game-drawer::backdrop{background:rgba(18,30,26,.55)}
