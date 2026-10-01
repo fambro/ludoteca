@@ -1,1245 +1,1245 @@
 {
   "schema_version": "1.1",
-  "lingua": "it",
-  "aggiornato_il": "2026-09-30",
-  "criteri": {
-    "casa_editrice": "Editore del gioco originale quando noto; per Codex Naturalis è indicato Cranio Creations, editore della copia italiana confermato dall'utente.",
-    "giocatori": "Intervallo stampato per il gioco base, senza contare variazioni introdotte dalle espansioni; null significa non verificato.",
-    "contenuti_posseduti": "Espansioni, scenari e mazzi dichiarati dall'utente; la quantità è 1 salvo indicazione diversa.",
-    "link_sito": "Preferibilmente pagina dell'editore; in mancanza, pagina informativa verificata. Null significa titolo non identificato.",
-    "autori": "Autori del gioco base; null se non verificati.",
-    "versione_di": "ID della versione principale dello stesso gioco; la versione collegata compare nel pannello laterale e non come card separata.",
-    "descrizione": "Testo breve originale per la scheda del catalogo.",
-    "immagine": "Percorso relativo a una copertina locale; null usa una copertina illustrata di riserva."
+  "language": "it",
+  "updated_at": "2026-09-30",
+  "criteria": {
+    "publisher": "Editore del gioco originale quando noto; per Codex Naturalis è indicato Cranio Creations, editore della copia italiana confermato dall'utente.",
+    "players": "Intervallo stampato per il gioco base, senza contare variazioni introdotte dalle espansioni; null significa non verificato.",
+    "owned_content": "Espansioni, scenari e mazzi dichiarati dall'utente; la quantità è 1 salvo indicazione diversa.",
+    "website_url": "Preferibilmente pagina dell'editore; in mancanza, pagina informativa verificata. Null significa titolo non identificato.",
+    "authors": "Autori del gioco base; null se non verificati.",
+    "version_of": "ID della versione principale dello stesso gioco; la versione collegata compare nel pannello laterale e non come card separata.",
+    "description": "Testo breve originale per la scheda del catalogo.",
+    "image": "Percorso relativo a una copertina locale; null usa una copertina illustrata di riserva."
   },
-  "giochi": [
+  "games": [
     {
-      "id": "ticket-europa",
-      "nome": "Ticket to Ride: Europa",
-      "titolo_nella_lista": "Ticket to Ride Europa",
-      "casa_editrice": "Days of Wonder",
-      "tipologia": "familiare; costruzione di tratte",
-      "giocatori": {
-        "min": 2,
-        "max": 5
-      },
-      "autori": [
-        "Alan R. Moon"
-      ],
-      "link_sito": "https://www.daysofwonder.com/game/ticket-to-ride-europe/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Collega le città europee con le tue linee ferroviarie e completa i biglietti destinazione.",
-      "immagine": "assets/covers/ticket-europa.webp"
-    },
-    {
-      "id": "ticket-europa-15",
-      "versione_di": "ticket-europa",
-      "nome": "Ticket to Ride: Europa – 15° anniversario",
-      "titolo_nella_lista": "Ticket to Ride Europa edizione 15 anni",
-      "casa_editrice": "Days of Wonder",
-      "tipologia": "familiare; costruzione di tratte",
-      "giocatori": {
-        "min": 2,
-        "max": 5
-      },
-      "autori": [
-        "Alan R. Moon"
-      ],
-      "link_sito": "https://www.daysofwonder.com/press/",
-      "edizione": "15° anniversario",
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": "Edizione autonoma da collezione; il link è alla pagina stampa dell'editore.",
-      "descrizione": "L’avventura ferroviaria attraverso l’Europa in una speciale edizione del 15° anniversario.",
-      "immagine": "assets/covers/ticket-europa-15.webp"
-    },
-    {
-      "id": "carcassonne",
-      "nome": "Carcassonne",
-      "titolo_nella_lista": "Carcassone",
-      "casa_editrice": "Hans im Glück",
-      "tipologia": "piazzamento tessere; familiare",
-      "giocatori": {
-        "min": 2,
-        "max": 5
-      },
-      "autori": [
-        "Klaus-Jürgen Wrede"
-      ],
-      "link_sito": "https://www.hans-im-glueck.de/en/game/carcassonne/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Costruisci un paesaggio medievale tessera dopo tessera e scegli dove schierare i tuoi seguaci.",
-      "immagine": "assets/covers/carcassonne.webp"
-    },
-    {
-      "id": "bang-bullet",
-      "nome": "BANG! The Bullet!",
-      "titolo_nella_lista": "Bang! (the bullet)",
-      "casa_editrice": "dV Games",
-      "tipologia": "carte; ruoli nascosti; western",
-      "giocatori": {
+      "id": "sea-stars",
+      "name": "A Sky of Stars",
+      "title_in_list": "A Sea of stars",
+      "publisher": "GateOnGames",
+      "type": "party game; roll-and-write; disegno",
+      "players": {
         "min": 3,
-        "max": 8
+        "max": 6
       },
-      "autori": [
-        "Emiliano Sciarra"
+      "authors": [
+        "Guido Albini"
       ],
-      "link_sito": "https://www.dvgiochi.com/catalogo/bang-la-pallottola/?lang=eng",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": "Confezione autonoma che include BANG! e varie espansioni.",
-      "descrizione": "Duelli, ruoli segreti e colpi di scena nel Far West, in una confezione ricca di contenuti.",
-      "immagine": "assets/covers/bang-bullet.webp"
-    },
-    {
-      "id": "azul",
-      "nome": "Azul",
-      "titolo_nella_lista": "Azul",
-      "casa_editrice": "Plan B Games",
-      "tipologia": "astratto; piazzamento tessere",
-      "giocatori": {
-        "min": 2,
-        "max": 4
-      },
-      "autori": [
-        "Michael Kiesling"
-      ],
-      "link_sito": "https://www.asmodee.it/product/azul/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Scegli piastrelle colorate e componi mosaici per ottenere la parete più armoniosa.",
-      "immagine": "assets/covers/azul.webp"
+      "website_url": "https://www.gateongames.com/a-sky-of-stars/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": "Titolo identificato grazie all'indicazione dell'editore: il nome pubblicato è A Sky of Stars.",
+      "description": "Disegna costellazioni e insegui la combinazione migliore in un gioco creativo da condividere.",
+      "image": "assets/covers/sea-stars.webp"
     },
     {
       "id": "architetti",
-      "nome": "Architetti del Regno Occidentale",
-      "titolo_nella_lista": "Architetti del regno occidentale + Age of artisian",
-      "casa_editrice": "Garphill Games",
-      "tipologia": "strategia; piazzamento lavoratori",
-      "giocatori": {
+      "name": "Architetti del Regno Occidentale",
+      "title_in_list": "Architetti del regno occidentale + Age of artisian",
+      "publisher": "Garphill Games",
+      "type": "strategia; piazzamento lavoratori",
+      "players": {
         "min": 1,
         "max": 5
       },
-      "autori": [
+      "authors": [
         "Shem Phillips",
         "S. J. Macdonald"
       ],
-      "link_sito": "https://www.garphill.com/products/architects-of-the-west-kingdom",
-      "edizione": null,
-      "contenuti_posseduti": [
+      "website_url": "https://www.garphill.com/products/architects-of-the-west-kingdom",
+      "edition": null,
+      "owned_content": [
         {
-          "nome": "Architetti del Regno Occidentale: L'Era degli Artigiani",
-          "categoria": "espansione",
-          "quantita": 1,
-          "link_sito": "https://www.garphill.com/products/architects-age-of-artisans",
-          "note": null
+          "name": "Architetti del Regno Occidentale: L'Era degli Artigiani",
+          "category": "espansione",
+          "quantity": 1,
+          "website_url": "https://www.garphill.com/products/architects-age-of-artisans",
+          "notes": null
         }
       ],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Raduna lavoratori, raccogli risorse e lascia il tuo segno nel regno medievale.",
-      "immagine": "assets/covers/architetti.webp"
-    },
-    {
-      "id": "cera-vecchia",
-      "versione_di": "cera-nuova",
-      "nome": "C'era una volta",
-      "titolo_nella_lista": "C'era una volta (vecchia edizione)",
-      "casa_editrice": "Atlas Games",
-      "tipologia": "carte; narrazione",
-      "giocatori": {
-        "min": 2,
-        "max": 6
-      },
-      "autori": [
-        "Richard Lambert",
-        "Andrew Rilstone",
-        "James Wallis"
-      ],
-      "link_sito": "https://www.atlas-games.com/onceuponatime",
-      "edizione": "vecchia edizione",
-      "contenuti_posseduti": [],
-      "stato_identificazione": "edizione_da_verificare",
-      "note": "Edizione italiana esatta non specificata; editore indicato è quello originale.",
-      "descrizione": "Crea una fiaba insieme agli altri giocatori, intrecciando personaggi, luoghi ed eventi.",
-      "immagine": "assets/covers/cera-vecchia.webp"
-    },
-    {
-      "id": "cera-nuova",
-      "nome": "C'era una volta",
-      "titolo_nella_lista": "C'era una volta (nuova edizione)",
-      "casa_editrice": "Atlas Games",
-      "tipologia": "carte; narrazione",
-      "giocatori": {
-        "min": 2,
-        "max": 6
-      },
-      "autori": [
-        "Richard Lambert",
-        "Andrew Rilstone",
-        "James Wallis"
-      ],
-      "link_sito": "https://www.ravendistribution.it/cera-una-volta-nuova-edizione/",
-      "edizione": "nuova edizione italiana",
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": "Edizione italiana distribuita da Raven Distribution.",
-      "descrizione": "Racconta una fiaba condivisa con le carte di questa nuova edizione narrativa.",
-      "immagine": "assets/covers/cera-nuova.webp"
-    },
-    {
-      "id": "whitehall",
-      "nome": "Whitehall Mystery",
-      "titolo_nella_lista": "Whitehall Mistery",
-      "casa_editrice": "Giochi Uniti",
-      "tipologia": "deduzione; movimento nascosto",
-      "giocatori": {
-        "min": 2,
-        "max": 4
-      },
-      "autori": [
-        "Gabriele Mari",
-        "Gianluca Santopietro"
-      ],
-      "link_sito": "https://www.giochiuniti.it/whitehall-mystery-online/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Un investigatore in fuga e una squadra sulle sue tracce: deduci i movimenti nascosti.",
-      "immagine": "assets/covers/whitehall.webp"
-    },
-    {
-      "id": "white-castle",
-      "nome": "The White Castle",
-      "titolo_nella_lista": "The white castle + Matcha",
-      "casa_editrice": "Devir",
-      "tipologia": "strategia; piazzamento dadi",
-      "giocatori": {
-        "min": 1,
-        "max": 4
-      },
-      "autori": [
-        "Israel Cendrero",
-        "Sheila Santos"
-      ],
-      "link_sito": "https://devir.cl/the-white-castle",
-      "edizione": null,
-      "contenuti_posseduti": [
-        {
-          "nome": "The White Castle: Matcha",
-          "categoria": "espansione",
-          "quantita": 1,
-          "link_sito": "https://devir.cl/8436607944348",
-          "note": null
-        }
-      ],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Pianifica ogni dado per ottenere influenza alla corte del Castello Bianco.",
-      "immagine": "assets/covers/white-castle.webp"
-    },
-    {
-      "id": "scythe",
-      "nome": "Scythe",
-      "titolo_nella_lista": "Scyhe + Invaders from afar + Winds of Gambit + Rise of Fenris",
-      "casa_editrice": "Stonemaier Games",
-      "tipologia": "strategia; controllo territorio",
-      "giocatori": {
-        "min": 1,
-        "max": 5
-      },
-      "autori": [
-        "Jamey Stegmaier"
-      ],
-      "link_sito": "https://store.stonemaiergames.com/products/scythe",
-      "edizione": null,
-      "contenuti_posseduti": [
-        {
-          "nome": "Scythe: Invaders from Afar",
-          "categoria": "espansione",
-          "quantita": 1,
-          "link_sito": "https://store.stonemaiergames.com/products/scythe-invaders-from-afar",
-          "note": null
-        },
-        {
-          "nome": "Scythe: The Wind Gambit",
-          "categoria": "espansione",
-          "quantita": 1,
-          "link_sito": "https://store.stonemaiergames.com/products/scythe-the-wind-gambit",
-          "note": null
-        },
-        {
-          "nome": "Scythe: The Rise of Fenris",
-          "categoria": "espansione",
-          "quantita": 1,
-          "link_sito": "https://store.stonemaiergames.com/products/scythe-the-rise-of-fenris",
-          "note": null
-        }
-      ],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Guida una fazione in un’Europa alternativa tra sviluppo, risorse e controllo del territorio.",
-      "immagine": "assets/covers/scythe.webp"
-    },
-    {
-      "id": "expeditions",
-      "nome": "Expeditions",
-      "titolo_nella_lista": "Expedition + Gears of corruption",
-      "casa_editrice": "Stonemaier Games",
-      "tipologia": "strategia; esplorazione; carte",
-      "giocatori": {
-        "min": 1,
-        "max": 5
-      },
-      "autori": [
-        "Jamey Stegmaier"
-      ],
-      "link_sito": "https://store.stonemaiergames.com/products/expeditions",
-      "edizione": null,
-      "contenuti_posseduti": [
-        {
-          "nome": "Expeditions: Gears of Corruption",
-          "categoria": "espansione",
-          "quantita": 1,
-          "link_sito": "https://store.stonemaiergames.com/products/expeditions-gears-of-corruption",
-          "note": "Porta il limite a 6 giocatori."
-        }
-      ],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Parti per la Siberia, esplora nuove regioni e costruisci un motore di carte sempre più efficace.",
-      "immagine": "assets/covers/expeditions.webp"
-    },
-    {
-      "id": "arkham-3",
-      "nome": "Arkham Horror: Terza Edizione",
-      "titolo_nella_lista": "Arkham Horror 3e + nel cuore della notte +abissi oscuri + i segreti dell'ordine",
-      "casa_editrice": "Fantasy Flight Games",
-      "tipologia": "cooperativo; horror investigativo",
-      "giocatori": {
-        "min": 1,
-        "max": 6
-      },
-      "autori": [
-        "Richard Launius",
-        "Nikki Valens",
-        "Kevin Wilson"
-      ],
-      "link_sito": "https://www.fantasyflightgames.com/product/arkham-horror-third-edition/",
-      "edizione": null,
-      "contenuti_posseduti": [
-        {
-          "nome": "Arkham Horror: Nel Cuore della Notte",
-          "categoria": "espansione",
-          "quantita": 1,
-          "link_sito": "https://www.fantasyflightgames.com/en/news/2019/6/11/dead-of-night/",
-          "note": null
-        },
-        {
-          "nome": "Arkham Horror: Abissi Oscuri",
-          "categoria": "espansione",
-          "quantita": 1,
-          "link_sito": "https://www.fantasyflightgames.com/en/products/arkham-horror-third-edition/products/under-dark-waves/",
-          "note": null
-        },
-        {
-          "nome": "Arkham Horror: I Segreti dell'Ordine",
-          "categoria": "espansione",
-          "quantita": 1,
-          "link_sito": "https://www.fantasyflightgames.com/en/news/2021/2/18/secrets-of-order/",
-          "note": null
-        }
-      ],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Indaga su inquietanti misteri e affronta insieme agli altri le minacce di Arkham.",
-      "immagine": "assets/covers/arkham-3.webp"
-    },
-    {
-      "id": "elder-sign",
-      "nome": "Il Segno degli Antichi",
-      "titolo_nella_lista": "Il segno degli antichi",
-      "casa_editrice": "Fantasy Flight Games",
-      "tipologia": "cooperativo; dadi; horror",
-      "giocatori": {
-        "min": 1,
-        "max": 8
-      },
-      "autori": [
-        "Richard Launius",
-        "Kevin Wilson"
-      ],
-      "link_sito": "https://www.fantasyflightgames.com/product/elder-sign/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Lancia i dadi e supera prove nei corridoi del museo prima che l’orrore si risvegli.",
-      "immagine": "assets/covers/elder-sign.webp"
-    },
-    {
-      "id": "set-watch",
-      "nome": "Turno di Guardia: Isole Abbandonate",
-      "titolo_nella_lista": "Turno di guardia Isole abbandonate",
-      "casa_editrice": "Rock Manor Games",
-      "tipologia": "cooperativo; dadi; avventura",
-      "giocatori": {
-        "min": 1,
-        "max": 4
-      },
-      "autori": [
-        "Todd Walsh"
-      ],
-      "link_sito": "https://rockmanorgames.com/portfolio/set-a-watch-forsaken-isles/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": "Titolo originale Set a Watch: Forsaken Isles; espansione autonoma.",
-      "descrizione": "Difendi il campo dalle creature dell’oscurità con una squadra di avventurieri.",
-      "immagine": "assets/covers/set-watch.webp"
-    },
-    {
-      "id": "dead-winter",
-      "nome": "Dead of Winter",
-      "titolo_nella_lista": "Dead of Winter + Colonie in guerra",
-      "casa_editrice": "Plaid Hat Games",
-      "tipologia": "cooperativo con obiettivi segreti; sopravvivenza",
-      "giocatori": {
-        "min": 2,
-        "max": 5
-      },
-      "autori": [
-        "Isaac Vega",
-        "Jonathan Gilmour"
-      ],
-      "link_sito": "https://www.fantasyflightgames.com/product/dead-of-winter/",
-      "edizione": null,
-      "contenuti_posseduti": [
-        {
-          "nome": "Dead of Winter: Colonie in Guerra",
-          "categoria": "espansione",
-          "quantita": 1,
-          "link_sito": "https://media.plaidhatgames.com/old_images/games/dead-of-winter/rules-wc.pdf",
-          "note": "La modalità due colonie richiede due scatole base compatibili."
-        }
-      ],
-      "stato_identificazione": "edizione_da_verificare",
-      "note": "La lista non specifica l'edizione della scatola base.",
-      "descrizione": "Sopravvivi a un inverno infestato dagli zombie, tra obiettivi comuni e interessi personali.",
-      "immagine": "assets/covers/dead-winter.webp"
-    },
-    {
-      "id": "colt",
-      "nome": "Colt Express",
-      "titolo_nella_lista": "Colt Express",
-      "casa_editrice": "Ludonaute",
-      "tipologia": "familiare; programmazione azioni",
-      "giocatori": {
-        "min": 2,
-        "max": 6
-      },
-      "autori": [
-        "Christophe Raimbault"
-      ],
-      "link_sito": "https://www.ludonaute.fr/produit/colt-express/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Programma le tue mosse e assalta un treno in corsa nel Far West.",
-      "immagine": "assets/covers/colt.webp"
-    },
-    {
-      "id": "dune",
-      "nome": "Dune: Imperium",
-      "titolo_nella_lista": "Dune imperium",
-      "casa_editrice": "Dire Wolf",
-      "tipologia": "strategia; deckbuilding; piazzamento lavoratori",
-      "giocatori": {
-        "min": 1,
-        "max": 4
-      },
-      "autori": [
-        "Paul Dennen"
-      ],
-      "link_sito": "https://www.asmodee.it/product/dune-imperium/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Conquista influenza su Arrakis combinando carte, agenti e alleanze politiche.",
-      "immagine": "assets/covers/dune.webp"
-    },
-    {
-      "id": "betrayal",
-      "nome": "Betrayal at House on the Hill",
-      "titolo_nella_lista": "Betrayl house of Hill",
-      "casa_editrice": "Avalon Hill",
-      "tipologia": "esplorazione; horror; traditore",
-      "giocatori": {
-        "min": 3,
-        "max": 6
-      },
-      "autori": [
-        "Bruce Glassco"
-      ],
-      "link_sito": "https://boardgamegeek.com/boardgame/10547/betrayal-house-hill",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "edizione_da_verificare",
-      "note": "Edizione non specificata; sito riferito al gioco originale.",
-      "descrizione": "Esplora una casa infestata che cambia a ogni partita, finché uno di voi potrebbe tradire il gruppo.",
-      "immagine": "assets/covers/betrayal.webp"
-    },
-    {
-      "id": "codex",
-      "nome": "Codex Naturalis",
-      "titolo_nella_lista": "Codex",
-      "casa_editrice": "Cranio Creations",
-      "tipologia": "carte; piazzamento; corsa ai punti",
-      "giocatori": {
-        "min": 2,
-        "max": 4
-      },
-      "autori": [
-        "Thomas Dupont"
-      ],
-      "link_sito": "https://studiobombyx.com/jeu/codex-naturalis/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": "Edizione italiana Cranio Creations; editore originale Bombyx. Il link è alla pagina dell'editore originale.",
-      "descrizione": "Disponi carte sovrapposte e componi un manoscritto ricco di simboli e risorse.",
-      "immagine": "assets/covers/codex.webp"
-    },
-    {
-      "id": "dixit",
-      "nome": "Dixit",
-      "titolo_nella_lista": "Dixit",
-      "casa_editrice": "Libellud",
-      "tipologia": "party game; associazione di immagini",
-      "giocatori": {
-        "min": 3,
-        "max": 8
-      },
-      "autori": [
-        "Jean-Louis Roubira"
-      ],
-      "link_sito": "https://www.asmodee.it/product/dixit/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Lascia parlare l’immaginazione: descrivi immagini evocative e indovina la carta giusta.",
-      "immagine": "assets/covers/dixit.webp"
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Raduna lavoratori, raccogli risorse e lascia il tuo segno nel regno medievale.",
+      "image": "assets/covers/architetti.webp"
     },
     {
       "id": "final-hour",
-      "nome": "Arkham Horror: Final Hour",
-      "titolo_nella_lista": "Final Hour",
-      "casa_editrice": "Fantasy Flight Games",
-      "tipologia": "cooperativo; horror",
-      "giocatori": {
+      "name": "Arkham Horror: Final Hour",
+      "title_in_list": "Final Hour",
+      "publisher": "Fantasy Flight Games",
+      "type": "cooperativo; horror",
+      "players": {
         "min": 1,
         "max": 4
       },
-      "autori": [
+      "authors": [
         "Todd Michlitsch",
         "Carlo A. Rossi"
       ],
-      "link_sito": "https://www.fantasyflightgames.com/en/products/arkham-horror-final-hour/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Una corsa contro il tempo nell’universo di Arkham Horror per fermare il rituale.",
-      "immagine": "assets/covers/final-hour.webp"
-    },
-    {
-      "id": "chronicles",
-      "nome": "Chronicles of Crime",
-      "titolo_nella_lista": "Chronicles of Crime",
-      "casa_editrice": "Lucky Duck Games",
-      "tipologia": "cooperativo; investigativo con app",
-      "giocatori": {
-        "min": 1,
-        "max": 4
-      },
-      "autori": [
-        "David Cicurel"
-      ],
-      "link_sito": "https://luckyduckgames.com/global/game/1-1064-chronicles-of-crime",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Esamina scene del crimine, interroga sospetti e risolvi casi investigativi con l’aiuto dell’app.",
-      "immagine": "assets/covers/chronicles.webp"
-    },
-    {
-      "id": "sea-stars",
-      "nome": "A Sky of Stars",
-      "titolo_nella_lista": "A Sea of stars",
-      "casa_editrice": "GateOnGames",
-      "tipologia": "party game; roll-and-write; disegno",
-      "giocatori": {
-        "min": 3,
-        "max": 6
-      },
-      "autori": [
-        "Guido Albini"
-      ],
-      "link_sito": "https://www.gateongames.com/a-sky-of-stars/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": "Titolo identificato grazie all'indicazione dell'editore: il nome pubblicato è A Sky of Stars.",
-      "descrizione": "Disegna costellazioni e insegui la combinazione migliore in un gioco creativo da condividere.",
-      "immagine": "assets/covers/sea-stars.webp"
-    },
-    {
-      "id": "root",
-      "nome": "Root",
-      "titolo_nella_lista": "Root",
-      "casa_editrice": "Leder Games",
-      "tipologia": "strategia asimmetrica; controllo territorio",
-      "giocatori": {
-        "min": 2,
-        "max": 4
-      },
-      "autori": [
-        "Cole Wehrle"
-      ],
-      "link_sito": "https://ledergames.com/products/root-a-game-of-woodland-might-and-right",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Quattro fazioni asimmetriche si contendono il controllo di un bosco pieno di intrighi.",
-      "immagine": "assets/covers/root.webp"
-    },
-    {
-      "id": "mansions",
-      "nome": "Le Case della Follia: Seconda Edizione",
-      "titolo_nella_lista": "Le case della follia seconda edizione",
-      "casa_editrice": "Fantasy Flight Games",
-      "tipologia": "cooperativo; horror investigativo con app",
-      "giocatori": {
-        "min": 1,
-        "max": 5
-      },
-      "autori": [
-        "Nikki Valens"
-      ],
-      "link_sito": "https://www.fantasyflightgames.com/product/mansions-of-madness-second-edition/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Esplora dimore infestate, cerca indizi e affronta gli orrori guidati dall’app.",
-      "immagine": "assets/covers/mansions.webp"
-    },
-    {
-      "id": "arkham-noir",
-      "nome": "Arkham Noir",
-      "titolo_nella_lista": "Arkham noir",
-      "casa_editrice": "Ludonova",
-      "tipologia": "solitario; carte investigative",
-      "giocatori": {
-        "min": 1,
-        "max": 1
-      },
-      "autori": [
-        "Yves Tourigny"
-      ],
-      "link_sito": "https://www.yvestourigny.com/arkham-noir",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "edizione_da_verificare",
-      "note": "Numero del caso non specificato; la scheda è della serie.",
-      "descrizione": "Un’indagine solitaria fatta di carte, indizi e scelte difficili nell’universo lovecraftiano.",
-      "immagine": "assets/covers/arkham-noir.webp"
-    },
-    {
-      "id": "scholars",
-      "nome": "Studiosi a Sud del Tigri",
-      "titolo_nella_lista": "Studiosi a sud del tigri",
-      "casa_editrice": "Garphill Games",
-      "tipologia": "strategia; piazzamento lavoratori e dadi",
-      "giocatori": {
-        "min": 1,
-        "max": 4
-      },
-      "autori": [
-        "Shem Phillips",
-        "S. J. Macdonald"
-      ],
-      "link_sito": "https://www.garphill.com/products/scholars-of-the-south-tigris",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Studia antichi manoscritti, traduci testi e pianifica l’uso di lavoratori e dadi.",
-      "immagine": "assets/covers/scholars.webp"
-    },
-    {
-      "id": "fate-fellowship",
-      "nome": "Il Signore degli Anelli: Il Destino della Compagnia",
-      "titolo_nella_lista": "Il destino della compagina; Il destino della compagina - Il signore degli anelli",
-      "casa_editrice": "Z-Man Games",
-      "tipologia": "cooperativo; strategia; sistema Pandemic",
-      "giocatori": {
-        "min": 1,
-        "max": 5
-      },
-      "autori": [
-        "Matt Leacock"
-      ],
-      "link_sito": "https://www.asmodee.it/product/il-signore-degli-anelli-il-destino-della-compagnia/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": "Il titolo compare due volte nella lista; registrato una volta sola.",
-      "descrizione": "Accompagna la Compagnia nel suo viaggio attraverso la Terra di Mezzo, cooperando per evitare la rovina.",
-      "immagine": "assets/covers/fate-fellowship.webp"
-    },
-    {
-      "id": "great-wall",
-      "nome": "La Grande Muraglia",
-      "titolo_nella_lista": "La Grande Muraglia",
-      "casa_editrice": "Awaken Realms",
-      "tipologia": "strategia; piazzamento lavoratori; difesa",
-      "giocatori": {
-        "min": 1,
-        "max": 4
-      },
-      "autori": [
-        "Kamil Cieśla",
-        "Robert Plesowicz",
-        "Łukasz Włodarczyk"
-      ],
-      "link_sito": "https://boardgamegeek.com/boardgame/292375/the-great-wall",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Coordina i tuoi lavoratori e difendi la Grande Muraglia dalle incursioni.",
-      "immagine": "assets/covers/great-wall.webp"
-    },
-    {
-      "id": "bloodborne",
-      "nome": "Bloodborne: Il Gioco da Tavolo",
-      "titolo_nella_lista": "Bloodborne il gioco da tavolo",
-      "casa_editrice": "CMON",
-      "tipologia": "cooperativo; campagna; combattimento",
-      "giocatori": {
-        "min": 1,
-        "max": 4
-      },
-      "autori": [
-        "Eric M. Lang",
-        "Michael Shinall"
-      ],
-      "link_sito": "https://www.cmon.com/product-line/bloodborne-the-board-game/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Affronta mostri e missioni in una campagna cooperativa ispirata al videogioco.",
-      "immagine": "assets/covers/bloodborne.webp"
-    },
-    {
-      "id": "wistar",
-      "nome": "Ratti di Wistar",
-      "titolo_nella_lista": "Ratti di Wistar",
-      "casa_editrice": "Cranio Creations",
-      "tipologia": "strategia; piazzamento lavoratori",
-      "giocatori": {
-        "min": 1,
-        "max": 4
-      },
-      "autori": [
-        "Simone Luciani",
-        "Danilo Sabia"
-      ],
-      "link_sito": "https://boardgamegeek.com/boardgame/387780/rats-wistar",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Guida una colonia di ratti inventori tra esplorazione, risorse e nuove costruzioni.",
-      "immagine": "assets/covers/wistar.webp"
-    },
-    {
-      "id": "time-stories",
-      "nome": "T.I.M.E Stories",
-      "titolo_nella_lista": "T.I.M.E Stories (+ Dietro la Maschera, Lumen Fidei, Spedizione endurance x2)",
-      "casa_editrice": "Space Cowboys",
-      "tipologia": "cooperativo; avventura narrativa",
-      "giocatori": {
-        "min": 2,
-        "max": 4
-      },
-      "autori": [
-        "Manuel Rozoy"
-      ],
-      "link_sito": "https://www.spacecowboys-games.com/game/time-stories/",
-      "edizione": null,
-      "contenuti_posseduti": [
-        {
-          "nome": "T.I.M.E Stories: Dietro la Maschera",
-          "categoria": "scenario",
-          "quantita": 1,
-          "link_sito": "https://www.spacecowboys-games.com/game/time-stories/",
-          "note": "Link alla pagina della serie."
-        },
-        {
-          "nome": "T.I.M.E Stories: Lumen Fidei",
-          "categoria": "scenario",
-          "quantita": 1,
-          "link_sito": "https://www.spacecowboys-games.com/game/time-stories/",
-          "note": "Link alla pagina della serie."
-        },
-        {
-          "nome": "T.I.M.E Stories: Spedizione Endurance",
-          "categoria": "scenario",
-          "quantita": 2,
-          "link_sito": "https://www.spacecowboys-games.com/game/time-stories/",
-          "note": "Link alla pagina della serie."
-        }
-      ],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Viaggia attraverso scenari narrativi e risolvi misteri prima che il tempo finisca.",
-      "immagine": "assets/covers/time-stories.webp"
+      "website_url": "https://www.fantasyflightgames.com/en/products/arkham-horror-final-hour/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Una corsa contro il tempo nell’universo di Arkham Horror per fermare il rituale.",
+      "image": "assets/covers/final-hour.webp"
     },
     {
       "id": "arkham-lcg",
-      "nome": "Arkham Horror: Il Gioco di Carte",
-      "titolo_nella_lista": "Arkham Horror Lcg + espansioni",
-      "casa_editrice": "Fantasy Flight Games",
-      "tipologia": "cooperativo; living card game; campagna",
-      "giocatori": {
+      "name": "Arkham Horror: Il Gioco di Carte",
+      "title_in_list": "Arkham Horror Lcg + espansioni",
+      "publisher": "Fantasy Flight Games",
+      "type": "cooperativo; living card game; campagna",
+      "players": {
         "min": 1,
         "max": 4
       },
-      "autori": [
+      "authors": [
         "Nate French",
         "Matthew Newman"
       ],
-      "link_sito": "https://www.asmodee.it/product/arkham-horror-il-gioco-di-carte-lcg/",
-      "edizione": null,
-      "contenuti_posseduti": [
+      "website_url": "https://www.asmodee.it/product/arkham-horror-il-gioco-di-carte-lcg/",
+      "edition": null,
+      "owned_content": [
         {
-          "nome": "L'Eredità di Dunwich – Espansione Campagna",
-          "categoria": "campagna",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "L'Eredità di Dunwich – Espansione Campagna",
+          "category": "campagna",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "L'Eredità di Dunwich – Espansione Investigatori",
-          "categoria": "espansione investigatori",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "L'Eredità di Dunwich – Espansione Investigatori",
+          "category": "espansione investigatori",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "La Strada per Carcosa – Espansione Campagna",
-          "categoria": "campagna",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "La Strada per Carcosa – Espansione Campagna",
+          "category": "campagna",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "La Strada per Carcosa – Espansione Investigatori",
-          "categoria": "espansione investigatori",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "La Strada per Carcosa – Espansione Investigatori",
+          "category": "espansione investigatori",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "L'Era Dimenticata – Espansione Campagna",
-          "categoria": "campagna",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "L'Era Dimenticata – Espansione Campagna",
+          "category": "campagna",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "L'Era Dimenticata – Espansione Investigatori",
-          "categoria": "espansione investigatori",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "L'Era Dimenticata – Espansione Investigatori",
+          "category": "espansione investigatori",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "Il Circolo Spezzato – Espansione Campagna",
-          "categoria": "campagna",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "Il Circolo Spezzato – Espansione Campagna",
+          "category": "campagna",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "Il Circolo Spezzato – Espansione Investigatori",
-          "categoria": "espansione investigatori",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "Il Circolo Spezzato – Espansione Investigatori",
+          "category": "espansione investigatori",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "Le Chiavi Scarlatte – Espansione Campagna",
-          "categoria": "campagna",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "Le Chiavi Scarlatte – Espansione Campagna",
+          "category": "campagna",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "Le Chiavi Scarlatte – Espansione Investigatori",
-          "categoria": "espansione investigatori",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "Le Chiavi Scarlatte – Espansione Investigatori",
+          "category": "espansione investigatori",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "La Cospirazione di Innsmouth – Espansione Campagna",
-          "categoria": "campagna",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "La Cospirazione di Innsmouth – Espansione Campagna",
+          "category": "campagna",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "La Cospirazione di Innsmouth – Espansione Investigatori",
-          "categoria": "espansione investigatori",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "La Cospirazione di Innsmouth – Espansione Investigatori",
+          "category": "espansione investigatori",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "La Festa di Hemlock Vale – Espansione Campagna",
-          "categoria": "campagna",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "La Festa di Hemlock Vale – Espansione Campagna",
+          "category": "campagna",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "La Festa di Hemlock Vale – Espansione Investigatori",
-          "categoria": "espansione investigatori",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "La Festa di Hemlock Vale – Espansione Investigatori",
+          "category": "espansione investigatori",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "Il Carnevale degli Orrori",
-          "categoria": "scenario indipendente",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "Il Carnevale degli Orrori",
+          "category": "scenario indipendente",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "Il Gala di Mezzo Inverno",
-          "categoria": "scenario indipendente",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/product/arkham-horror-lcg-il-gala-di-mezzo-inverno/",
-          "note": null
+          "name": "Il Gala di Mezzo Inverno",
+          "category": "scenario indipendente",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/product/arkham-horror-lcg-il-gala-di-mezzo-inverno/",
+          "notes": null
         },
         {
-          "nome": "Assassinio all'Hotel Excelsior",
-          "categoria": "scenario indipendente",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/product/arkham-horror-lcg-assassinio-allhotel-excelsior/",
-          "note": null
+          "name": "Assassinio all'Hotel Excelsior",
+          "category": "scenario indipendente",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/product/arkham-horror-lcg-assassinio-allhotel-excelsior/",
+          "notes": null
         },
         {
-          "nome": "Fortuna e Follia",
-          "categoria": "scenario indipendente",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "Fortuna e Follia",
+          "category": "scenario indipendente",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "I Guardiani dell'Abisso",
-          "categoria": "scenario indipendente",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "I Guardiani dell'Abisso",
+          "category": "scenario indipendente",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "Jacqueline Fine",
-          "categoria": "mazzo introduttivo investigatore",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "Jacqueline Fine",
+          "category": "mazzo introduttivo investigatore",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "Ritorno a… L'Eredità di Dunwich",
-          "categoria": "espansione Ritorno a",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "Ritorno a… L'Eredità di Dunwich",
+          "category": "espansione Ritorno a",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "Ritorno a… La Strada per Carcosa",
-          "categoria": "espansione Ritorno a",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "Ritorno a… La Strada per Carcosa",
+          "category": "espansione Ritorno a",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "Ritorno a… La Notte dello Zelota",
-          "categoria": "espansione Ritorno a",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "Ritorno a… La Notte dello Zelota",
+          "category": "espansione Ritorno a",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         },
         {
-          "nome": "Ritorno a… Il Circolo Spezzato",
-          "categoria": "espansione Ritorno a",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
-          "note": null
+          "name": "Ritorno a… Il Circolo Spezzato",
+          "category": "espansione Ritorno a",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null
         }
       ],
-      "stato_identificazione": "edizione_da_verificare",
-      "note": "La specifica edizione della prima scatola base non è indicata; link al Capitolo 1.",
-      "descrizione": "Costruisci il tuo mazzo investigatore e vivi campagne di orrore e mistero.",
-      "immagine": "assets/covers/arkham-lcg.webp"
+      "identification_status": "edizione_da_verificare",
+      "notes": "La specifica edizione della prima scatola base non è indicata; link al Capitolo 1.",
+      "description": "Costruisci il tuo mazzo investigatore e vivi campagne di orrore e mistero.",
+      "image": "assets/covers/arkham-lcg.webp"
+    },
+    {
+      "id": "arkham-rpg",
+      "name": "Arkham Horror: Il Gioco di Ruolo – Abisso Famelico",
+      "title_in_list": "Arkham horror gioco di ruolo - abisso famelico",
+      "publisher": "Edge Studio",
+      "type": "gioco di ruolo; set introduttivo",
+      "players": {
+        "min": 2,
+        "max": 6
+      },
+      "authors": null,
+      "website_url": "https://www.edge-studio.net/games/arkham-horror-starter-set/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": "Fino a 5 investigatori più un Game Master; minimo di 1 investigatore dedotto dal formato GdR. Crediti creativi da controllare sulla scatola italiana.",
+      "description": "Un set introduttivo per raccontare e giocare un’avventura nel mondo di Arkham Horror.",
+      "image": "assets/covers/arkham-rpg.webp"
     },
     {
       "id": "arkham-lcg-2",
-      "nome": "Arkham Horror LCG: Capitolo 2",
-      "titolo_nella_lista": "Arkham Horror Lcg seconda stagione (+tutti i pack investigatore della seconda edizione)",
-      "casa_editrice": "Fantasy Flight Games",
-      "tipologia": "cooperativo; living card game; campagna",
-      "giocatori": {
+      "name": "Arkham Horror LCG: Capitolo 2",
+      "title_in_list": "Arkham Horror Lcg seconda stagione (+tutti i pack investigatore della seconda edizione)",
+      "publisher": "Fantasy Flight Games",
+      "type": "cooperativo; living card game; campagna",
+      "players": {
         "min": 1,
         "max": 4
       },
-      "autori": [
+      "authors": [
         "Josiah Harrist",
         "MJ Newman",
         "Nate French",
         "Nicholas Kory"
       ],
-      "link_sito": "https://www.asmodee.it/product/arkham-horror-lcg-capitolo-2/",
-      "edizione": null,
-      "contenuti_posseduti": [
+      "website_url": "https://www.asmodee.it/product/arkham-horror-lcg-capitolo-2/",
+      "edition": null,
+      "owned_content": [
         {
-          "nome": "Arkham Horror LCG – Investigatore André Patel",
-          "categoria": "mazzo investigatore",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/product/arkham-horror-lcg-investigatore-andre-patel/",
-          "note": null
+          "name": "Arkham Horror LCG – Investigatore André Patel",
+          "category": "mazzo investigatore",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/product/arkham-horror-lcg-investigatore-andre-patel/",
+          "notes": null
         },
         {
-          "nome": "Arkham Horror LCG – Investigatore Carolyn Fern",
-          "categoria": "mazzo investigatore",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/product/arkham-horror-lcg-investigatore-carolyn-fern/",
-          "note": null
+          "name": "Arkham Horror LCG – Investigatore Carolyn Fern",
+          "category": "mazzo investigatore",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/product/arkham-horror-lcg-investigatore-carolyn-fern/",
+          "notes": null
         },
         {
-          "nome": "Arkham Horror LCG – Investigatore Marie Lambeau",
-          "categoria": "mazzo investigatore",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/product/arkham-horror-lcg-investigatore-marie-lambeau/",
-          "note": null
+          "name": "Arkham Horror LCG – Investigatore Marie Lambeau",
+          "category": "mazzo investigatore",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/product/arkham-horror-lcg-investigatore-marie-lambeau/",
+          "notes": null
         },
         {
-          "nome": "Arkham Horror LCG – Investigatore Miguel de la Cruz",
-          "categoria": "mazzo investigatore",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/product/arkham-horror-lcg-investigatore-miguel-de-la-cruz/",
-          "note": null
+          "name": "Arkham Horror LCG – Investigatore Miguel de la Cruz",
+          "category": "mazzo investigatore",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/product/arkham-horror-lcg-investigatore-miguel-de-la-cruz/",
+          "notes": null
         },
         {
-          "nome": "Arkham Horror LCG – Investigatore Tommy Muldoon",
-          "categoria": "mazzo investigatore",
-          "quantita": 1,
-          "link_sito": "https://www.asmodee.it/product/arkham-horror-lcg-investigatore-tommy-muldoon/",
-          "note": null
+          "name": "Arkham Horror LCG – Investigatore Tommy Muldoon",
+          "category": "mazzo investigatore",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/product/arkham-horror-lcg-investigatore-tommy-muldoon/",
+          "notes": null
         }
       ],
-      "stato_identificazione": "verificato",
-      "note": "Scatola base del Capitolo 2, compatibile con la linea precedente. I cinque mazzi investigatore elencati sono quelli del Capitolo 2 nel catalogo Asmodee Italia.",
-      "descrizione": "Un nuovo capitolo del gioco di carte investigativo ambientato nell’universo di Arkham.",
-      "immagine": "assets/covers/arkham-lcg-2.webp"
+      "identification_status": "verificato",
+      "notes": "Scatola base del Capitolo 2, compatibile con la linea precedente. I cinque mazzi investigatore elencati sono quelli del Capitolo 2 nel catalogo Asmodee Italia.",
+      "description": "Un nuovo capitolo del gioco di carte investigativo ambientato nell’universo di Arkham.",
+      "image": "assets/covers/arkham-lcg-2.webp"
     },
     {
-      "id": "sherlock-thames",
-      "nome": "Sherlock Holmes: Consulente Investigativo – I Delitti del Tamigi e Altri Casi",
-      "titolo_nella_lista": "Sherlock homes consulente investigatore",
-      "casa_editrice": "Space Cowboys",
-      "tipologia": "cooperativo; investigativo narrativo",
-      "giocatori": {
+      "id": "arkham-3",
+      "name": "Arkham Horror: Terza Edizione",
+      "title_in_list": "Arkham Horror 3e + nel cuore della notte +abissi oscuri + i segreti dell'ordine",
+      "publisher": "Fantasy Flight Games",
+      "type": "cooperativo; horror investigativo",
+      "players": {
         "min": 1,
-        "max": 8
+        "max": 6
       },
-      "autori": [
-        "Gary Grady",
-        "Raymond Edwards",
-        "Suzanne Goldberg"
+      "authors": [
+        "Richard Launius",
+        "Nikki Valens",
+        "Kevin Wilson"
       ],
-      "link_sito": "https://www.spacecowboys-games.com/game/the-thames-murders/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "edizione_da_verificare",
-      "note": "Identificazione probabile della scatola senza sottotitolo; da confermare dalla copertina.",
-      "descrizione": "Esamina giornali, mappe e testimonianze per risolvere i delitti del Tamigi.",
-      "immagine": "assets/covers/sherlock-thames.webp"
+      "website_url": "https://www.fantasyflightgames.com/product/arkham-horror-third-edition/",
+      "edition": null,
+      "owned_content": [
+        {
+          "name": "Arkham Horror: Nel Cuore della Notte",
+          "category": "espansione",
+          "quantity": 1,
+          "website_url": "https://www.fantasyflightgames.com/en/news/2019/6/11/dead-of-night/",
+          "notes": null
+        },
+        {
+          "name": "Arkham Horror: Abissi Oscuri",
+          "category": "espansione",
+          "quantity": 1,
+          "website_url": "https://www.fantasyflightgames.com/en/products/arkham-horror-third-edition/products/under-dark-waves/",
+          "notes": null
+        },
+        {
+          "name": "Arkham Horror: I Segreti dell'Ordine",
+          "category": "espansione",
+          "quantity": 1,
+          "website_url": "https://www.fantasyflightgames.com/en/news/2021/2/18/secrets-of-order/",
+          "notes": null
+        }
+      ],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Indaga su inquietanti misteri e affronta insieme agli altri le minacce di Arkham.",
+      "image": "assets/covers/arkham-3.webp"
     },
     {
-      "id": "sherlock-carlton",
-      "nome": "Sherlock Holmes: Consulente Investigativo – Carlton House e Queen's Park",
-      "titolo_nella_lista": "Sherlock homes consulente investigatore Carlon House e Queen Park",
-      "casa_editrice": "Space Cowboys",
-      "tipologia": "cooperativo; investigativo narrativo",
-      "giocatori": {
+      "id": "arkham-noir",
+      "name": "Arkham Noir",
+      "title_in_list": "Arkham noir",
+      "publisher": "Ludonova",
+      "type": "solitario; carte investigative",
+      "players": {
         "min": 1,
-        "max": 8
+        "max": 1
       },
-      "autori": [
-        "Gary Grady",
-        "Raymond Edwards",
-        "Suzanne Goldberg"
+      "authors": [
+        "Yves Tourigny"
       ],
-      "link_sito": "https://www.spacecowboys-games.com/game/carlton-house/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Segui gli indizi tra Carlton House e Queen’s Park nei panni dei consulenti di Sherlock Holmes.",
-      "immagine": "assets/covers/sherlock-carlton.webp"
+      "website_url": "https://www.yvestourigny.com/arkham-noir",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "edizione_da_verificare",
+      "notes": "Numero del caso non specificato; la scheda è della serie.",
+      "description": "Un’indagine solitaria fatta di carte, indizi e scelte difficili nell’universo lovecraftiano.",
+      "image": "assets/covers/arkham-noir.webp"
     },
     {
-      "id": "sherlock-jack",
-      "nome": "Sherlock Holmes: Consulente Investigativo – Jack lo Squartatore e le Avventure del West End",
-      "titolo_nella_lista": "Sherlock homes consulente investigatore jack lo squartatore",
-      "casa_editrice": "Space Cowboys",
-      "tipologia": "cooperativo; investigativo narrativo",
-      "giocatori": {
-        "min": 1,
-        "max": 8
-      },
-      "autori": [
-        "Gary Grady",
-        "Suzanne Goldberg"
-      ],
-      "link_sito": "https://www.spacecowboys-games.com/game/jack-the-ripper-west-end-adventures/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Indaga sui crimini di Jack lo Squartatore e sui casi del West End vittoriano.",
-      "immagine": "assets/covers/sherlock-jack.webp"
-    },
-    {
-      "id": "mythos",
-      "nome": "Mythos: Nuova Edizione",
-      "titolo_nella_lista": "Mythos",
-      "casa_editrice": "MS Edizioni",
-      "tipologia": "cooperativo; investigativo narrativo",
-      "giocatori": {
-        "min": 1,
-        "max": 8
-      },
-      "autori": [
-        "Hal Eccles"
-      ],
-      "link_sito": "https://www.msedizioni.it/prodotto/mythos/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "edizione_da_verificare",
-      "note": "La lista non indica l'edizione; la scheda usa la nuova edizione italiana.",
-      "descrizione": "Collabora per sciogliere misteri e seguire indizi in un’indagine dalle tinte oscure.",
-      "immagine": "assets/covers/mythos.webp"
-    },
-    {
-      "id": "one-small-step",
-      "nome": "One Small Step",
-      "titolo_nella_lista": "One Small Step",
-      "casa_editrice": "Academy Games",
-      "tipologia": "strategia; corsa allo spazio; piazzamento lavoratori",
-      "giocatori": {
+      "id": "azul",
+      "name": "Azul",
+      "title_in_list": "Azul",
+      "publisher": "Plan B Games",
+      "type": "astratto; piazzamento tessere",
+      "players": {
         "min": 2,
         "max": 4
       },
-      "autori": [
-        "James DuMond"
+      "authors": [
+        "Michael Kiesling"
       ],
-      "link_sito": "https://www.academygames.com/products/one-small-step-retail-edition",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": null,
-      "descrizione": "Rivivi la corsa allo spazio tra programmi, missioni e scelte strategiche.",
-      "immagine": "assets/covers/one-small-step.webp"
+      "website_url": "https://www.asmodee.it/product/azul/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Scegli piastrelle colorate e componi mosaici per ottenere la parete più armoniosa.",
+      "image": "assets/covers/azul.webp"
     },
     {
-      "id": "arkham-rpg",
-      "nome": "Arkham Horror: Il Gioco di Ruolo – Abisso Famelico",
-      "titolo_nella_lista": "Arkham horror gioco di ruolo - abisso famelico",
-      "casa_editrice": "Edge Studio",
-      "tipologia": "gioco di ruolo; set introduttivo",
-      "giocatori": {
+      "id": "bang-bullet",
+      "name": "BANG! The Bullet!",
+      "title_in_list": "Bang! (the bullet)",
+      "publisher": "dV Games",
+      "type": "carte; ruoli nascosti; western",
+      "players": {
+        "min": 3,
+        "max": 8
+      },
+      "authors": [
+        "Emiliano Sciarra"
+      ],
+      "website_url": "https://www.dvgiochi.com/catalogo/bang-la-pallottola/?lang=eng",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": "Confezione autonoma che include BANG! e varie espansioni.",
+      "description": "Duelli, ruoli segreti e colpi di scena nel Far West, in una confezione ricca di contenuti.",
+      "image": "assets/covers/bang-bullet.webp"
+    },
+    {
+      "id": "betrayal",
+      "name": "Betrayal at House on the Hill",
+      "title_in_list": "Betrayl house of Hill",
+      "publisher": "Avalon Hill",
+      "type": "esplorazione; horror; traditore",
+      "players": {
+        "min": 3,
+        "max": 6
+      },
+      "authors": [
+        "Bruce Glassco"
+      ],
+      "website_url": "https://boardgamegeek.com/boardgame/10547/betrayal-house-hill",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "edizione_da_verificare",
+      "notes": "Edizione non specificata; sito riferito al gioco originale.",
+      "description": "Esplora una casa infestata che cambia a ogni partita, finché uno di voi potrebbe tradire il gruppo.",
+      "image": "assets/covers/betrayal.webp"
+    },
+    {
+      "id": "bloodborne",
+      "name": "Bloodborne: Il Gioco da Tavolo",
+      "title_in_list": "Bloodborne il gioco da tavolo",
+      "publisher": "CMON",
+      "type": "cooperativo; campagna; combattimento",
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "authors": [
+        "Eric M. Lang",
+        "Michael Shinall"
+      ],
+      "website_url": "https://www.cmon.com/product-line/bloodborne-the-board-game/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Affronta mostri e missioni in una campagna cooperativa ispirata al videogioco.",
+      "image": "assets/covers/bloodborne.webp"
+    },
+    {
+      "id": "carcassonne",
+      "name": "Carcassonne",
+      "title_in_list": "Carcassone",
+      "publisher": "Hans im Glück",
+      "type": "piazzamento tessere; familiare",
+      "players": {
+        "min": 2,
+        "max": 5
+      },
+      "authors": [
+        "Klaus-Jürgen Wrede"
+      ],
+      "website_url": "https://www.hans-im-glueck.de/en/game/carcassonne/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Costruisci un paesaggio medievale tessera dopo tessera e scegli dove schierare i tuoi seguaci.",
+      "image": "assets/covers/carcassonne.webp"
+    },
+    {
+      "id": "cera-nuova",
+      "name": "C'era una volta",
+      "title_in_list": "C'era una volta (nuova edizione)",
+      "publisher": "Atlas Games",
+      "type": "carte; narrazione",
+      "players": {
         "min": 2,
         "max": 6
       },
-      "autori": null,
-      "link_sito": "https://www.edge-studio.net/games/arkham-horror-starter-set/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": "Fino a 5 investigatori più un Game Master; minimo di 1 investigatore dedotto dal formato GdR. Crediti creativi da controllare sulla scatola italiana.",
-      "descrizione": "Un set introduttivo per raccontare e giocare un’avventura nel mondo di Arkham Horror.",
-      "immagine": "assets/covers/arkham-rpg.webp"
+      "authors": [
+        "Richard Lambert",
+        "Andrew Rilstone",
+        "James Wallis"
+      ],
+      "website_url": "https://www.ravendistribution.it/cera-una-volta-nuova-edizione/",
+      "edition": "nuova edizione italiana",
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": "Edizione italiana distribuita da Raven Distribution.",
+      "description": "Racconta una fiaba condivisa con le carte di questa nuova edizione narrativa.",
+      "image": "assets/covers/cera-nuova.webp"
+    },
+    {
+      "id": "cera-vecchia",
+      "version_of": "cera-nuova",
+      "name": "C'era una volta",
+      "title_in_list": "C'era una volta (vecchia edizione)",
+      "publisher": "Atlas Games",
+      "type": "carte; narrazione",
+      "players": {
+        "min": 2,
+        "max": 6
+      },
+      "authors": [
+        "Richard Lambert",
+        "Andrew Rilstone",
+        "James Wallis"
+      ],
+      "website_url": "https://www.atlas-games.com/onceuponatime",
+      "edition": "vecchia edizione",
+      "owned_content": [],
+      "identification_status": "edizione_da_verificare",
+      "notes": "Edizione italiana esatta non specificata; editore indicato è quello originale.",
+      "description": "Crea una fiaba insieme agli altri giocatori, intrecciando personaggi, luoghi ed eventi.",
+      "image": "assets/covers/cera-vecchia.webp"
+    },
+    {
+      "id": "chronicles",
+      "name": "Chronicles of Crime",
+      "title_in_list": "Chronicles of Crime",
+      "publisher": "Lucky Duck Games",
+      "type": "cooperativo; investigativo con app",
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "authors": [
+        "David Cicurel"
+      ],
+      "website_url": "https://luckyduckgames.com/global/game/1-1064-chronicles-of-crime",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Esamina scene del crimine, interroga sospetti e risolvi casi investigativi con l’aiuto dell’app.",
+      "image": "assets/covers/chronicles.webp"
+    },
+    {
+      "id": "codex",
+      "name": "Codex Naturalis",
+      "title_in_list": "Codex",
+      "publisher": "Cranio Creations",
+      "type": "carte; piazzamento; corsa ai punti",
+      "players": {
+        "min": 2,
+        "max": 4
+      },
+      "authors": [
+        "Thomas Dupont"
+      ],
+      "website_url": "https://studiobombyx.com/jeu/codex-naturalis/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": "Edizione italiana Cranio Creations; editore originale Bombyx. Il link è alla pagina dell'editore originale.",
+      "description": "Disponi carte sovrapposte e componi un manoscritto ricco di simboli e risorse.",
+      "image": "assets/covers/codex.webp"
+    },
+    {
+      "id": "colt",
+      "name": "Colt Express",
+      "title_in_list": "Colt Express",
+      "publisher": "Ludonaute",
+      "type": "familiare; programmazione azioni",
+      "players": {
+        "min": 2,
+        "max": 6
+      },
+      "authors": [
+        "Christophe Raimbault"
+      ],
+      "website_url": "https://www.ludonaute.fr/produit/colt-express/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Programma le tue mosse e assalta un treno in corsa nel Far West.",
+      "image": "assets/covers/colt.webp"
+    },
+    {
+      "id": "dead-winter",
+      "name": "Dead of Winter",
+      "title_in_list": "Dead of Winter + Colonie in guerra",
+      "publisher": "Plaid Hat Games",
+      "type": "cooperativo con obiettivi segreti; sopravvivenza",
+      "players": {
+        "min": 2,
+        "max": 5
+      },
+      "authors": [
+        "Isaac Vega",
+        "Jonathan Gilmour"
+      ],
+      "website_url": "https://www.fantasyflightgames.com/product/dead-of-winter/",
+      "edition": null,
+      "owned_content": [
+        {
+          "name": "Dead of Winter: Colonie in Guerra",
+          "category": "espansione",
+          "quantity": 1,
+          "website_url": "https://media.plaidhatgames.com/old_images/games/dead-of-winter/rules-wc.pdf",
+          "notes": "La modalità due colonie richiede due scatole base compatibili."
+        }
+      ],
+      "identification_status": "edizione_da_verificare",
+      "notes": "La lista non specifica l'edizione della scatola base.",
+      "description": "Sopravvivi a un inverno infestato dagli zombie, tra obiettivi comuni e interessi personali.",
+      "image": "assets/covers/dead-winter.webp"
+    },
+    {
+      "id": "dixit",
+      "name": "Dixit",
+      "title_in_list": "Dixit",
+      "publisher": "Libellud",
+      "type": "party game; associazione di immagini",
+      "players": {
+        "min": 3,
+        "max": 8
+      },
+      "authors": [
+        "Jean-Louis Roubira"
+      ],
+      "website_url": "https://www.asmodee.it/product/dixit/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Lascia parlare l’immaginazione: descrivi immagini evocative e indovina la carta giusta.",
+      "image": "assets/covers/dixit.webp"
+    },
+    {
+      "id": "dune",
+      "name": "Dune: Imperium",
+      "title_in_list": "Dune imperium",
+      "publisher": "Dire Wolf",
+      "type": "strategia; deckbuilding; piazzamento lavoratori",
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "authors": [
+        "Paul Dennen"
+      ],
+      "website_url": "https://www.asmodee.it/product/dune-imperium/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Conquista influenza su Arrakis combinando carte, agenti e alleanze politiche.",
+      "image": "assets/covers/dune.webp"
     },
     {
       "id": "dnd-essentials",
-      "nome": "Dungeons & Dragons: Kit Essenziale – Il Drago del Picco Ghiacciato",
-      "titolo_nella_lista": "Dangeon and Dragongs Set introduttivo Il picco guiglia..",
-      "casa_editrice": "Wizards of the Coast",
-      "tipologia": "gioco di ruolo; set introduttivo",
-      "giocatori": {
+      "name": "Dungeons & Dragons: Kit Essenziale – Il Drago del Picco Ghiacciato",
+      "title_in_list": "Dangeon and Dragongs Set introduttivo Il picco guiglia..",
+      "publisher": "Wizards of the Coast",
+      "type": "gioco di ruolo; set introduttivo",
+      "players": {
         "min": 2,
         "max": 6
       },
-      "autori": null,
-      "link_sito": "https://marketplace.dndbeyond.com/adventures/SRC-00041",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "da_confermare",
-      "note": "Identificazione probabile: 'Dragon of Icespire Peak'. I 2–6 includono un Dungeon Master e 1–5 avventurieri.",
-      "descrizione": "Un kit per iniziare a vivere avventure fantasy nel mondo di Dungeons & Dragons.",
-      "immagine": "assets/covers/dnd-essentials.webp"
+      "authors": null,
+      "website_url": "https://marketplace.dndbeyond.com/adventures/SRC-00041",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "da_confermare",
+      "notes": "Identificazione probabile: 'Dragon of Icespire Peak'. I 2–6 includono un Dungeon Master e 1–5 avventurieri.",
+      "description": "Un kit per iniziare a vivere avventure fantasy nel mondo di Dungeons & Dragons.",
+      "image": "assets/covers/dnd-essentials.webp"
+    },
+    {
+      "id": "expeditions",
+      "name": "Expeditions",
+      "title_in_list": "Expedition + Gears of corruption",
+      "publisher": "Stonemaier Games",
+      "type": "strategia; esplorazione; carte",
+      "players": {
+        "min": 1,
+        "max": 5
+      },
+      "authors": [
+        "Jamey Stegmaier"
+      ],
+      "website_url": "https://store.stonemaiergames.com/products/expeditions",
+      "edition": null,
+      "owned_content": [
+        {
+          "name": "Expeditions: Gears of Corruption",
+          "category": "espansione",
+          "quantity": 1,
+          "website_url": "https://store.stonemaiergames.com/products/expeditions-gears-of-corruption",
+          "notes": "Porta il limite a 6 giocatori."
+        }
+      ],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Parti per la Siberia, esplora nuove regioni e costruisci un motore di carte sempre più efficace.",
+      "image": "assets/covers/expeditions.webp"
+    },
+    {
+      "id": "elder-sign",
+      "name": "Il Segno degli Antichi",
+      "title_in_list": "Il segno degli antichi",
+      "publisher": "Fantasy Flight Games",
+      "type": "cooperativo; dadi; horror",
+      "players": {
+        "min": 1,
+        "max": 8
+      },
+      "authors": [
+        "Richard Launius",
+        "Kevin Wilson"
+      ],
+      "website_url": "https://www.fantasyflightgames.com/product/elder-sign/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Lancia i dadi e supera prove nei corridoi del museo prima che l’orrore si risvegli.",
+      "image": "assets/covers/elder-sign.webp"
+    },
+    {
+      "id": "fate-fellowship",
+      "name": "Il Signore degli Anelli: Il Destino della Compagnia",
+      "title_in_list": "Il destino della compagina; Il destino della compagina - Il signore degli anelli",
+      "publisher": "Z-Man Games",
+      "type": "cooperativo; strategia; sistema Pandemic",
+      "players": {
+        "min": 1,
+        "max": 5
+      },
+      "authors": [
+        "Matt Leacock"
+      ],
+      "website_url": "https://www.asmodee.it/product/il-signore-degli-anelli-il-destino-della-compagnia/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": "Il titolo compare due volte nella lista; registrato una volta sola.",
+      "description": "Accompagna la Compagnia nel suo viaggio attraverso la Terra di Mezzo, cooperando per evitare la rovina.",
+      "image": "assets/covers/fate-fellowship.webp"
     },
     {
       "id": "incipit",
-      "nome": "Incipit",
-      "titolo_nella_lista": "Incipit",
-      "casa_editrice": "Asmodee Italia",
-      "tipologia": "narrazione; dadi; party game",
-      "giocatori": null,
-      "autori": [
+      "name": "Incipit",
+      "title_in_list": "Incipit",
+      "publisher": "Asmodee Italia",
+      "type": "narrazione; dadi; party game",
+      "players": null,
+      "authors": [
         "Nicola Palmieri",
         "Mario Palladino"
       ],
-      "link_sito": "https://incipitgame.com/en/home/",
-      "edizione": null,
-      "contenuti_posseduti": [],
-      "stato_identificazione": "verificato",
-      "note": "Numero giocatori non indicato nelle fonti consultate.",
-      "descrizione": "Inventate storie insieme lasciando che dadi e spunti narrativi guidino l’immaginazione.",
-      "immagine": "assets/covers/incipit.webp"
+      "website_url": "https://incipitgame.com/en/home/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": "Numero giocatori non indicato nelle fonti consultate.",
+      "description": "Inventate storie insieme lasciando che dadi e spunti narrativi guidino l’immaginazione.",
+      "image": "assets/covers/incipit.webp"
+    },
+    {
+      "id": "great-wall",
+      "name": "La Grande Muraglia",
+      "title_in_list": "La Grande Muraglia",
+      "publisher": "Awaken Realms",
+      "type": "strategia; piazzamento lavoratori; difesa",
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "authors": [
+        "Kamil Cieśla",
+        "Robert Plesowicz",
+        "Łukasz Włodarczyk"
+      ],
+      "website_url": "https://boardgamegeek.com/boardgame/292375/the-great-wall",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Coordina i tuoi lavoratori e difendi la Grande Muraglia dalle incursioni.",
+      "image": "assets/covers/great-wall.webp"
+    },
+    {
+      "id": "mansions",
+      "name": "Le Case della Follia: Seconda Edizione",
+      "title_in_list": "Le case della follia seconda edizione",
+      "publisher": "Fantasy Flight Games",
+      "type": "cooperativo; horror investigativo con app",
+      "players": {
+        "min": 1,
+        "max": 5
+      },
+      "authors": [
+        "Nikki Valens"
+      ],
+      "website_url": "https://www.fantasyflightgames.com/product/mansions-of-madness-second-edition/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Esplora dimore infestate, cerca indizi e affronta gli orrori guidati dall’app.",
+      "image": "assets/covers/mansions.webp"
+    },
+    {
+      "id": "mythos",
+      "name": "Mythos: Nuova Edizione",
+      "title_in_list": "Mythos",
+      "publisher": "MS Edizioni",
+      "type": "cooperativo; investigativo narrativo",
+      "players": {
+        "min": 1,
+        "max": 8
+      },
+      "authors": [
+        "Hal Eccles"
+      ],
+      "website_url": "https://www.msedizioni.it/prodotto/mythos/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "edizione_da_verificare",
+      "notes": "La lista non indica l'edizione; la scheda usa la nuova edizione italiana.",
+      "description": "Collabora per sciogliere misteri e seguire indizi in un’indagine dalle tinte oscure.",
+      "image": "assets/covers/mythos.webp"
+    },
+    {
+      "id": "one-small-step",
+      "name": "One Small Step",
+      "title_in_list": "One Small Step",
+      "publisher": "Academy Games",
+      "type": "strategia; corsa allo spazio; piazzamento lavoratori",
+      "players": {
+        "min": 2,
+        "max": 4
+      },
+      "authors": [
+        "James DuMond"
+      ],
+      "website_url": "https://www.academygames.com/products/one-small-step-retail-edition",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Rivivi la corsa allo spazio tra programmi, missioni e scelte strategiche.",
+      "image": "assets/covers/one-small-step.webp"
+    },
+    {
+      "id": "wistar",
+      "name": "Ratti di Wistar",
+      "title_in_list": "Ratti di Wistar",
+      "publisher": "Cranio Creations",
+      "type": "strategia; piazzamento lavoratori",
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "authors": [
+        "Simone Luciani",
+        "Danilo Sabia"
+      ],
+      "website_url": "https://boardgamegeek.com/boardgame/387780/rats-wistar",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Guida una colonia di ratti inventori tra esplorazione, risorse e nuove costruzioni.",
+      "image": "assets/covers/wistar.webp"
+    },
+    {
+      "id": "root",
+      "name": "Root",
+      "title_in_list": "Root",
+      "publisher": "Leder Games",
+      "type": "strategia asimmetrica; controllo territorio",
+      "players": {
+        "min": 2,
+        "max": 4
+      },
+      "authors": [
+        "Cole Wehrle"
+      ],
+      "website_url": "https://ledergames.com/products/root-a-game-of-woodland-might-and-right",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Quattro fazioni asimmetriche si contendono il controllo di un bosco pieno di intrighi.",
+      "image": "assets/covers/root.webp"
+    },
+    {
+      "id": "scythe",
+      "name": "Scythe",
+      "title_in_list": "Scyhe + Invaders from afar + Winds of Gambit + Rise of Fenris",
+      "publisher": "Stonemaier Games",
+      "type": "strategia; controllo territorio",
+      "players": {
+        "min": 1,
+        "max": 5
+      },
+      "authors": [
+        "Jamey Stegmaier"
+      ],
+      "website_url": "https://store.stonemaiergames.com/products/scythe",
+      "edition": null,
+      "owned_content": [
+        {
+          "name": "Scythe: Invaders from Afar",
+          "category": "espansione",
+          "quantity": 1,
+          "website_url": "https://store.stonemaiergames.com/products/scythe-invaders-from-afar",
+          "notes": null
+        },
+        {
+          "name": "Scythe: The Wind Gambit",
+          "category": "espansione",
+          "quantity": 1,
+          "website_url": "https://store.stonemaiergames.com/products/scythe-the-wind-gambit",
+          "notes": null
+        },
+        {
+          "name": "Scythe: The Rise of Fenris",
+          "category": "espansione",
+          "quantity": 1,
+          "website_url": "https://store.stonemaiergames.com/products/scythe-the-rise-of-fenris",
+          "notes": null
+        }
+      ],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Guida una fazione in un’Europa alternativa tra sviluppo, risorse e controllo del territorio.",
+      "image": "assets/covers/scythe.webp"
+    },
+    {
+      "id": "sherlock-carlton",
+      "name": "Sherlock Holmes: Consulente Investigativo – Carlton House e Queen's Park",
+      "title_in_list": "Sherlock homes consulente investigatore Carlon House e Queen Park",
+      "publisher": "Space Cowboys",
+      "type": "cooperativo; investigativo narrativo",
+      "players": {
+        "min": 1,
+        "max": 8
+      },
+      "authors": [
+        "Gary Grady",
+        "Raymond Edwards",
+        "Suzanne Goldberg"
+      ],
+      "website_url": "https://www.spacecowboys-games.com/game/carlton-house/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Segui gli indizi tra Carlton House e Queen’s Park nei panni dei consulenti di Sherlock Holmes.",
+      "image": "assets/covers/sherlock-carlton.webp"
+    },
+    {
+      "id": "sherlock-thames",
+      "name": "Sherlock Holmes: Consulente Investigativo – I Delitti del Tamigi e Altri Casi",
+      "title_in_list": "Sherlock homes consulente investigatore",
+      "publisher": "Space Cowboys",
+      "type": "cooperativo; investigativo narrativo",
+      "players": {
+        "min": 1,
+        "max": 8
+      },
+      "authors": [
+        "Gary Grady",
+        "Raymond Edwards",
+        "Suzanne Goldberg"
+      ],
+      "website_url": "https://www.spacecowboys-games.com/game/the-thames-murders/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "edizione_da_verificare",
+      "notes": "Identificazione probabile della scatola senza sottotitolo; da confermare dalla copertina.",
+      "description": "Esamina giornali, mappe e testimonianze per risolvere i delitti del Tamigi.",
+      "image": "assets/covers/sherlock-thames.webp"
+    },
+    {
+      "id": "sherlock-jack",
+      "name": "Sherlock Holmes: Consulente Investigativo – Jack lo Squartatore e le Avventure del West End",
+      "title_in_list": "Sherlock homes consulente investigatore jack lo squartatore",
+      "publisher": "Space Cowboys",
+      "type": "cooperativo; investigativo narrativo",
+      "players": {
+        "min": 1,
+        "max": 8
+      },
+      "authors": [
+        "Gary Grady",
+        "Suzanne Goldberg"
+      ],
+      "website_url": "https://www.spacecowboys-games.com/game/jack-the-ripper-west-end-adventures/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Indaga sui crimini di Jack lo Squartatore e sui casi del West End vittoriano.",
+      "image": "assets/covers/sherlock-jack.webp"
+    },
+    {
+      "id": "scholars",
+      "name": "Studiosi a Sud del Tigri",
+      "title_in_list": "Studiosi a sud del tigri",
+      "publisher": "Garphill Games",
+      "type": "strategia; piazzamento lavoratori e dadi",
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "authors": [
+        "Shem Phillips",
+        "S. J. Macdonald"
+      ],
+      "website_url": "https://www.garphill.com/products/scholars-of-the-south-tigris",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Studia antichi manoscritti, traduci testi e pianifica l’uso di lavoratori e dadi.",
+      "image": "assets/covers/scholars.webp"
+    },
+    {
+      "id": "white-castle",
+      "name": "The White Castle",
+      "title_in_list": "The white castle + Matcha",
+      "publisher": "Devir",
+      "type": "strategia; piazzamento dadi",
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "authors": [
+        "Israel Cendrero",
+        "Sheila Santos"
+      ],
+      "website_url": "https://devir.cl/the-white-castle",
+      "edition": null,
+      "owned_content": [
+        {
+          "name": "The White Castle: Matcha",
+          "category": "espansione",
+          "quantity": 1,
+          "website_url": "https://devir.cl/8436607944348",
+          "notes": null
+        }
+      ],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Pianifica ogni dado per ottenere influenza alla corte del Castello Bianco.",
+      "image": "assets/covers/white-castle.webp"
+    },
+    {
+      "id": "ticket-europa",
+      "name": "Ticket to Ride: Europa",
+      "title_in_list": "Ticket to Ride Europa",
+      "publisher": "Days of Wonder",
+      "type": "familiare; costruzione di tratte",
+      "players": {
+        "min": 2,
+        "max": 5
+      },
+      "authors": [
+        "Alan R. Moon"
+      ],
+      "website_url": "https://www.daysofwonder.com/game/ticket-to-ride-europe/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Collega le città europee con le tue linee ferroviarie e completa i biglietti destinazione.",
+      "image": "assets/covers/ticket-europa.webp"
+    },
+    {
+      "id": "ticket-europa-15",
+      "version_of": "ticket-europa",
+      "name": "Ticket to Ride: Europa – 15° anniversario",
+      "title_in_list": "Ticket to Ride Europa edizione 15 anni",
+      "publisher": "Days of Wonder",
+      "type": "familiare; costruzione di tratte",
+      "players": {
+        "min": 2,
+        "max": 5
+      },
+      "authors": [
+        "Alan R. Moon"
+      ],
+      "website_url": "https://www.daysofwonder.com/press/",
+      "edition": "15° anniversario",
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": "Edizione autonoma da collezione; il link è alla pagina stampa dell'editore.",
+      "description": "L’avventura ferroviaria attraverso l’Europa in una speciale edizione del 15° anniversario.",
+      "image": "assets/covers/ticket-europa-15.webp"
+    },
+    {
+      "id": "time-stories",
+      "name": "T.I.M.E Stories",
+      "title_in_list": "T.I.M.E Stories (+ Dietro la Maschera, Lumen Fidei, Spedizione endurance x2)",
+      "publisher": "Space Cowboys",
+      "type": "cooperativo; avventura narrativa",
+      "players": {
+        "min": 2,
+        "max": 4
+      },
+      "authors": [
+        "Manuel Rozoy"
+      ],
+      "website_url": "https://www.spacecowboys-games.com/game/time-stories/",
+      "edition": null,
+      "owned_content": [
+        {
+          "name": "T.I.M.E Stories: Dietro la Maschera",
+          "category": "scenario",
+          "quantity": 1,
+          "website_url": "https://www.spacecowboys-games.com/game/time-stories/",
+          "notes": "Link alla pagina della serie."
+        },
+        {
+          "name": "T.I.M.E Stories: Lumen Fidei",
+          "category": "scenario",
+          "quantity": 1,
+          "website_url": "https://www.spacecowboys-games.com/game/time-stories/",
+          "notes": "Link alla pagina della serie."
+        },
+        {
+          "name": "T.I.M.E Stories: Spedizione Endurance",
+          "category": "scenario",
+          "quantity": 2,
+          "website_url": "https://www.spacecowboys-games.com/game/time-stories/",
+          "notes": "Link alla pagina della serie."
+        }
+      ],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Viaggia attraverso scenari narrativi e risolvi misteri prima che il tempo finisca.",
+      "image": "assets/covers/time-stories.webp"
+    },
+    {
+      "id": "set-watch",
+      "name": "Turno di Guardia: Isole Abbandonate",
+      "title_in_list": "Turno di guardia Isole abbandonate",
+      "publisher": "Rock Manor Games",
+      "type": "cooperativo; dadi; avventura",
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "authors": [
+        "Todd Walsh"
+      ],
+      "website_url": "https://rockmanorgames.com/portfolio/set-a-watch-forsaken-isles/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": "Titolo originale Set a Watch: Forsaken Isles; espansione autonoma.",
+      "description": "Difendi il campo dalle creature dell’oscurità con una squadra di avventurieri.",
+      "image": "assets/covers/set-watch.webp"
+    },
+    {
+      "id": "whitehall",
+      "name": "Whitehall Mystery",
+      "title_in_list": "Whitehall Mistery",
+      "publisher": "Giochi Uniti",
+      "type": "deduzione; movimento nascosto",
+      "players": {
+        "min": 2,
+        "max": 4
+      },
+      "authors": [
+        "Gabriele Mari",
+        "Gianluca Santopietro"
+      ],
+      "website_url": "https://www.giochiuniti.it/whitehall-mystery-online/",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Un investigatore in fuga e una squadra sulle sue tracce: deduci i movimenti nascosti.",
+      "image": "assets/covers/whitehall.webp"
     }
   ]
 }

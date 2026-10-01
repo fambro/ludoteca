@@ -30,15 +30,15 @@ def sort_games(games: list[dict]) -> list[dict]:
         raise ValueError("Il JSON contiene ID di gioco duplicati")
 
     def key(game: dict) -> tuple[str, int, str, str, str]:
-        primary_id = game.get("versione_di")
+        primary_id = game.get("version_of")
         primary = by_id.get(primary_id) if primary_id else game
-        if primary is None or primary.get("versione_di"):
+        if primary is None or primary.get("version_of"):
             raise ValueError(f"Versione principale non valida per {game['id']}: {primary_id}")
         return (
-            alphabetic_key(primary["nome"]),
+            alphabetic_key(primary["name"]),
             bool(primary_id),
-            alphabetic_key(game["nome"]),
-            alphabetic_key(game.get("edizione") or ""),
+            alphabetic_key(game["name"]),
+            alphabetic_key(game.get("edition") or ""),
             game["id"],
         )
 
@@ -53,9 +53,9 @@ def main() -> int:
 
     with args.file.open(encoding="utf-8") as source:
         data = json.load(source)
-    games = data.get("giochi")
+    games = data.get("games")
     if not isinstance(games, list):
-        raise ValueError("Il JSON deve contenere una lista 'giochi'")
+        raise ValueError("Il JSON deve contenere una lista 'games'")
     ordered = sort_games(games)
     if games == ordered:
         print(f"Già in ordine alfabetico: {len(games)} giochi")
@@ -64,7 +64,7 @@ def main() -> int:
         print(f"Da ordinare: {args.file}")
         return 1
 
-    data["giochi"] = ordered
+    data["games"] = ordered
     args.file.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Ordinati {len(games)} giochi in {args.file}")
     return 0

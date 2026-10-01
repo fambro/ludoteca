@@ -46,7 +46,7 @@ def download(item):
 def main():
     sources = json.loads(SOURCES.read_text())
     data = json.loads(DATA.read_text())
-    ids = {game["id"] for game in data["giochi"]}
+    ids = {game["id"] for game in data["games"]}
     if set(sources) != ids:
         raise ValueError(f"Source IDs differ from game IDs: {set(sources) ^ ids}")
     requested = set(sys.argv[1:]) or ids
@@ -61,9 +61,9 @@ def main():
             print(f"FAILED {game_id}: {error}")
         else:
             print(f"OK {game_id}")
-    for game in data["giochi"]:
+    for game in data["games"]:
         if game["id"] in requested:
-            game["immagine"] = f"assets/covers/{game['id']}.webp" if game["id"] in success else None
+            game["image"] = f"assets/covers/{game['id']}.webp" if game["id"] in success else None
     DATA.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
     print(f"Downloaded {len(success)}/{len(requested)} covers")
 
