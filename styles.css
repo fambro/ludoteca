@@ -126,6 +126,7 @@ body.drawer-open .game-card{transition:none}
 .game-drawer{position:fixed;inset:0 0 0 auto;width:min(100%,560px);height:100dvh;max-width:none;max-height:100dvh;margin:0;padding:0;border:0;background:#fffdf9;color:var(--ink);box-shadow:-20px 0 55px rgba(22,31,27,.22);overflow-y:auto;overscroll-behavior:contain;transform:translateX(100%);transition:transform .3s cubic-bezier(.22,1,.36,1)}
 .game-drawer.is-visible{transform:translateX(0)}
 .game-drawer::backdrop{background:rgba(18,30,26,.55)}
+@media(pointer:coarse){.game-drawer::backdrop{background:transparent}}
 .drawer-head{position:sticky;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;min-height:76px;padding:12px 32px;background:#fffdf9;border-bottom:1px solid var(--line)}
 .drawer-eyebrow{color:#a05d40;font-size:10px;font-weight:800;letter-spacing:2px}
 .drawer-close{display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--line);border-radius:50%;background:#fff;color:var(--ink);font-size:27px;line-height:1}

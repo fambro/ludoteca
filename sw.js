@@ -1,8 +1,8 @@
-const CACHE_NAME = 'ludoteca-98d7e56406663ae1';
+const CACHE_NAME = 'ludoteca-1a2aab37fdd889cf';
 const PRECACHE_URLS = [
   "./",
   "script.js?v=ad5009569c0c97f5c583a64a25d9584f093babc16e11e7db657594a8a6d485e1",
-  "styles.css?v=259984a436e4b0eee507cfc03304c0bf8628019319c4f4685ec5775d7695e159",
+  "styles.css?v=fde210f9ac3363cf3301b35d343e250cdb82575ffaf83297b43aadf6a9adaf8a",
   "data/ludoteca.json?v=c5f6c5a0b2f25679253de89d8a03e697f40061fd8d9ba922f70c3d5f2d915cf2",
   "manifest.webmanifest",
   "assets/icons/icon-180.png",
