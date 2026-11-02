@@ -236,6 +236,14 @@
           "extends_player_count": false
         },
         {
+          "name": "La Città Sommersa – Espansione Investigatori",
+          "category": "espansione investigatori",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/product/arkham-horror-il-gioco-di-carte-la-citta-sommersa-espansione-investigatori/",
+          "notes": null,
+          "extends_player_count": false
+        },
+        {
           "name": "Il Carnevale degli Orrori",
           "category": "scenario indipendente",
           "quantity": 1,
