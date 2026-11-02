@@ -1,7 +1,7 @@
 {
   "schema_version": "1.4",
   "language": "it",
-  "updated_at": "2026-10-01",
+  "updated_at": "2026-11-02",
   "criteria": {
     "publisher": "Editore del gioco originale quando noto; per Codex Naturalis è indicato Cranio Creations, editore della copia italiana confermato dall'utente.",
     "players": "Intervallo stampato per il gioco base, senza contare variazioni introdotte dalle espansioni; null significa non verificato.",
@@ -224,6 +224,14 @@
           "category": "espansione investigatori",
           "quantity": 1,
           "website_url": "https://www.asmodee.it/gamme/arkham-horror-il-gioco-di-carte/",
+          "notes": null,
+          "extends_player_count": false
+        },
+        {
+          "name": "La Città Sommersa – Espansione Campagna",
+          "category": "campagna",
+          "quantity": 1,
+          "website_url": "https://www.asmodee.it/product/arkham-horror-il-gioco-di-carte-la-citta-sommersa-espansione-campagna/",
           "notes": null,
           "extends_player_count": false
         },
@@ -710,6 +718,30 @@
       "description": "Programma le tue mosse e assalta un treno in corsa nel Far West.",
       "image": "assets/covers/colt.webp",
       "average_play_time_minutes": 40
+    },
+    {
+      "id": "crossing-heroes",
+      "name": "Crossing Heroes",
+      "title_in_list": "Crossing Heroes",
+      "publisher": "Cranio Creations",
+      "type": "carte; piazzamento",
+      "players": {
+        "min": 2,
+        "max": 5
+      },
+      "authors": [
+        "Johannes Goupy",
+        "Matthieu Verdier"
+      ],
+      "website_url": "https://craniocreations.it/en/products/crossing-heroes",
+      "manual_url": "https://cdn.shopify.com/s/files/1/1010/2246/6379/files/Crossing_Heroes_Rules_IT.pdf?v=1788511866",
+      "edition": null,
+      "owned_content": [],
+      "identification_status": "verificato",
+      "notes": null,
+      "description": "Circonda il tuo eroe di imprese mitologiche e disponi le abilità giuste per portarle a termine.",
+      "image": "assets/covers/crossing-heroes.webp",
+      "average_play_time_minutes": 30
     },
     {
       "id": "dead-winter",

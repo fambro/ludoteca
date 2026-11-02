@@ -1,9 +1,9 @@
-const CACHE_NAME = 'ludoteca-1a2aab37fdd889cf';
+const CACHE_NAME = 'ludoteca-4d021c6fca0cca19';
 const PRECACHE_URLS = [
   "./",
-  "script.js?v=ad5009569c0c97f5c583a64a25d9584f093babc16e11e7db657594a8a6d485e1",
+  "script.js?v=cb7ba5206b18e5e4f3c1c884bca2a7caa36c39c7db77e43418c25ab660259be8",
   "styles.css?v=fde210f9ac3363cf3301b35d343e250cdb82575ffaf83297b43aadf6a9adaf8a",
-  "data/ludoteca.json?v=c5f6c5a0b2f25679253de89d8a03e697f40061fd8d9ba922f70c3d5f2d915cf2",
+  "data/ludoteca.json?v=7f94083e8edc70abc57fc4ff8565ba3f3ee90e958a19486dfc6c59df42d56884",
   "manifest.webmanifest",
   "assets/icons/icon-180.png",
   "assets/icons/icon-192.png",
@@ -24,6 +24,7 @@ const PRECACHE_URLS = [
   "assets/covers/chronicles.webp",
   "assets/covers/codex.webp",
   "assets/covers/colt.webp",
+  "assets/covers/crossing-heroes.webp",
   "assets/covers/dead-winter.webp",
   "assets/covers/dixit.webp",
   "assets/covers/dnd-essentials.webp",
