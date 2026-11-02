@@ -53,6 +53,21 @@ const PRECACHE_URLS = [
   "assets/covers/whitehall.webp",
   "assets/covers/wistar.webp"
 ];
+const NAVIGATION_TIMEOUT_MS = 3000;
+
+async function navigate(request, scope) {
+  const cached = await caches.match(new URL('./', scope));
+  if (!cached) return fetch(request, { cache: 'no-cache' });
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), NAVIGATION_TIMEOUT_MS);
+  try {
+    return await fetch(request, { cache: 'no-cache', signal: controller.signal });
+  } catch {
+    return cached;
+  } finally {
+    clearTimeout(timeout);
+  }
+}
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) =>
@@ -74,7 +89,7 @@ self.addEventListener('fetch', (event) => {
   const scope = new URL(self.registration.scope);
   if (url.origin !== scope.origin || !url.pathname.startsWith(scope.pathname)) return;
   if (event.request.mode === 'navigate') {
-    event.respondWith(fetch(event.request, { cache: 'no-cache' }).catch(() => caches.match(new URL('./', scope))));
+    event.respondWith(navigate(event.request, scope));
     return;
   }
   event.respondWith(caches.match(event.request).then((cached) => cached || fetch(event.request)));

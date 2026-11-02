@@ -57,7 +57,7 @@ The offline script appends the full SHA-256 digest as `?v=` to the CSS, JavaScri
 
 The web app manifest provides the home-screen name, icon, and standalone display. GitHub Pages serves it over HTTPS. The service worker caches the page, CSS, JavaScript, catalog, icons, and all covers (about 2.3 MB), so the library works offline after the first successful visit. External game sites and manuals still require a connection.
 
-When online, navigation checks for the latest page. Each deployment generates a different `sw.js` whenever cached content changes; the new worker downloads a complete new cache before activating, then removes old caches. A previously open tab may keep using the old offline copy until it is closed and reopened. On a locally served source checkout, run the hash update script after edits to keep the worker current.
+When online, navigation checks for the latest page; if the network has not answered within 3 seconds, the cached page opens instead. Each deployment generates a different `sw.js` whenever cached content changes; the new worker downloads a complete new cache before activating, then removes old caches. A previously open tab may keep using the old offline copy until it is closed and reopened. On a locally served source checkout, run the hash update script after edits to keep the worker current.
 
 ## GitHub Pages build
 
